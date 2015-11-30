@@ -24,5 +24,17 @@ window.onload = function(){
         dots: true,
         arrows: false
     });
+
+    // Set up Slick carousel to index speakers slider
+    $('.js-speakers-slider').slick({
+        lazyLoad: 'ondemand',
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
+    });
 };
 
