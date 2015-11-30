@@ -20,7 +20,9 @@
     padding-top: 28px;
   }
   &__date{
-    @include font-family('Ek-Mukta-Medium');
+    //@include font-family('Ek-Mukta-Medium');
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 500;
     font-size: 24px;
     line-height: 24px;
     margin-top: 0;
@@ -28,7 +30,9 @@
     color: $color-text;
   }
   &__title{
-    @include font-family('Ek-Mukta-Medium');
+    //@include font-family('Ek-Mukta-Medium');
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 500;
     font-size: 50px;
     line-height: 50px;
     color: $color-dark-text;
@@ -36,7 +40,9 @@
     margin-bottom: 10px;
   }
   &__slogan{
-    @include font-family('Ek-Mukta-Medium');
+    //@include font-family('Ek-Mukta-Medium');
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 500;
     font-size: 25px;
     line-height: 25px;
     color: $color-text;
@@ -70,14 +76,15 @@
     display: inline-block;
   }
   &__link{
-    @include font-family('Ek-Mukta-Bold');
+    //@include font-family('Ek-Mukta-Bold');
     @include transition();
+    font-family: 'Ek Mukta', sans-serif;
     font-size: 15px;
     line-height: 40px;
     color: $color-menu-text;
     text-transform: uppercase;
     display: block;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
     &:hover{  color: $color-menu-text--hover;}
     &:active{  color: $color-menu-text--hover;}

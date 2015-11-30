@@ -1,9 +1,12 @@
 // TYPOGRAPHY
 
 // FONTS
-@include font-face('Ek-Mukta-Light', ek-mukta, light, ekkukta-light-webfont);
-@include font-face('Ek-Mukta-Bold', ek-mukta, bold, ekkukta-bold-webfont);
-@include font-face('Ek-Mukta-Medium', ek-mukta, medium, ekkukta-medium-webfont);
+//@include font-face('Ek-Mukta-Light', ek-mukta, light, ekmukta-light-webfont);
+//@include font-face('Ek-Mukta-Bold', ek-mukta, bold, ekmukta-bold-webfont);
+//@include font-face('Ek-Mukta-Medium', ek-mukta, medium, ekmukta-medium-webfont);
+//@include font-face('Ek-Mukta-Light', ek-mukta, light, EkMukta-Light);
+//@include font-face('Ek-Mukta-Bold', ek-mukta, bold, EkMukta-Bold);
+//@include font-face('Ek-Mukta-Medium', ek-mukta, medium, EkMukta-Medium);
 
 html {
   font-size: $base-font-size;

@@ -7,9 +7,6 @@
 	Location: Saint-Petersburg, Russia
 
 # ORGANISATION
-    Name: AstraMediaGroup
-    Site: astramg.ru
-    Contact: office [at] astramg.ru
 
 # THANKS
     School: http://epixx.ru
