@@ -34,7 +34,7 @@ window.onload = function(){
         variableWidth: true,
         dots: false,
         arrows: true,
-        prevArrow: '<button type="button" class="slick-prev" title="Prev Speaker"></button>',
+        prevArrow: '<button type="button" class="slick-prev" title="Previous Speaker"></button>',
         nextArrow: '<button type="button" class="slick-next" title="Next Speaker"></button>'
     });
 };
