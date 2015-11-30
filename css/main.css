@@ -843,8 +843,9 @@ html {
 
     font-weight : 700;
     line-height : 40px;
+    text-align : center; 
     color : #036;
-    text-decoration : none; 
+    text-decoration : none;
 
     border : 1px solid #036;
     border-radius : 20px;
