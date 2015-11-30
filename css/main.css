@@ -137,9 +137,10 @@ small {
 sub, sup {
     position : relative;
 
-    font-size : 75%;
     line-height : 0;
-    vertical-align : baseline;
+    vertical-align : baseline; 
+
+    font-size : 75%;
 }
 
 sup {
@@ -194,9 +195,8 @@ pre {
  * Address odd `em`-unit font size rendering in all browsers.
  */
 code, kbd, pre, samp {
-    font-size : 1em; 
-
     font-family : monospace, monospace;
+    font-size : 1em;
 }
 
 /* Forms
@@ -214,10 +214,11 @@ code, kbd, pre, samp {
 button, input, optgroup, select, textarea {
     /* 2 */
     margin : 0;
+
+    color : inherit;
     /* 1 */
 
     font : inherit;
-    color : inherit;
     /* 3 */
 }
 
@@ -583,23 +584,24 @@ The `sprites` mixin generates identical output to the CSS template
 }
 
 html {
+    line-height : 0; 
+
     font-size : 12px;
-    line-height : 0;
 }
 
 .h2-title {
     display : inline-block;
     margin : 0;
 
-    font-weight : bold;
-    font-size : 19px;
     line-height : 36px;
     color : #036;
-    font-style : normal;
 
     border-bottom : 2px solid #f90; 
 
     font-family : "Ek-Mukta-Bold", sans-serif;
+    font-size : 19px;
+    font-style : normal;
+    font-weight : bold;
 }
 
 .header {
@@ -635,36 +637,36 @@ html {
     margin-top : 0;
     margin-bottom : 15px;
 
-    font-weight : normal;
-    font-size : 24px;
     line-height : 24px;
     color : #069; 
-    font-style : normal;
 
     font-family : "Ek-Mukta-Medium", sans-serif;
+    font-size : 24px;
+    font-style : normal;
+    font-weight : normal;
 }
 .header__title {
     margin-top : 0;
     margin-bottom : 10px; 
 
-    font-weight : normal;
-    font-size : 50px;
     line-height : 50px;
     color : #036;
-    font-style : normal;
 
     font-family : "Ek-Mukta-Medium", sans-serif;
+    font-size : 50px;
+    font-style : normal;
+    font-weight : normal;
 }
 .header__slogan {
     margin : 0; 
 
-    font-weight : normal;
-    font-size : 25px;
     line-height : 25px;
     color : #069;
-    font-style : normal;
 
     font-family : "Ek-Mukta-Medium", sans-serif;
+    font-size : 25px;
+    font-style : normal;
+    font-weight : normal;
 }
 
 .top-menu {
@@ -715,19 +717,19 @@ html {
 .top-menu__link {
     display : block;
 
-    font-weight : normal;
-    font-weight : bold;
-    font-size : 15px;
     line-height : 40px;
     color : #fff;
     text-transform : uppercase;
     text-decoration : none; 
-    font-style : normal;
 
     -webkit-transition : all .5s linear;
             transition : all .5s linear;
 
     font-family : "Ek-Mukta-Bold", sans-serif;
+    font-size : 15px;
+    font-style : normal;
+    font-weight : bold;
+    font-weight : normal;
 }
 .top-menu__link:hover {
     color : #069;
@@ -773,15 +775,11 @@ html {
     height : 80px;
     margin : 0 auto;
 
-    font-weight : normal;
-    font-weight : bold;
-    font-size : 24px;
     line-height : 80px;
     text-align : center;
     color : #fff;
     text-transform : uppercase;
     text-decoration : none;
-    font-style : normal;
 
     background : -webkit-linear-gradient(top, #f90, #f60);
     background :         linear-gradient(to bottom, #f90, #f60);
@@ -789,6 +787,10 @@ html {
     border-radius : 35px;
 
     font-family : "Ek-Mukta-Bold", sans-serif;
+    font-size : 24px;
+    font-style : normal;
+    font-weight : normal;
+    font-weight : bold;
 }
 .top-slider__btn:hover {
     background : -webkit-linear-gradient(top, #930, #c60);
@@ -874,14 +876,14 @@ html {
     margin-top : 25px;
     margin-bottom : 35px; 
 
-    font-weight : normal;
-    font-weight : 500;
-    font-size : 15px;
     line-height : 30px;
     color : #069;
-    font-style : normal;
 
     font-family : "Ek-Mukta-Medium", sans-serif;
+    font-size : 15px;
+    font-style : normal;
+    font-weight : 500;
+    font-weight : normal;
 }
 .lead-block__btn {
     display : inline-block;
@@ -889,16 +891,16 @@ html {
     height : 40px;
     padding : 0 25px;
 
-    font-weight : bold;
     line-height : 40px;
     color : #036;
     text-decoration : none; 
-    font-style : normal;
 
     border : 1px solid #036;
     border-radius : 20px;
 
     font-family : "Ek-Mukta-Bold", sans-serif;
+    font-style : normal;
+    font-weight : bold;
 }
 .lead-block__btn:hover {
     background : -webkit-linear-gradient(bottom, rgba(0, 0, 0, .05), white);
