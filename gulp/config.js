@@ -2,7 +2,7 @@ module.exports = {
     // Path settings
     pathTo: {
             Src: {
-                Styles: 'src/scss/**/*.scss',
+                Styles: 'src/scss/main.scss',
                 Jade: 'src/jade/**/*.jade',
                 Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
                 PngSprite: 'src/img/sprite/**/*.png',

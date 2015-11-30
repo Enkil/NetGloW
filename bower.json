@@ -15,7 +15,8 @@
   "devDependencies": {
     "normalize-css": "normalize.css#~3.0.3",
     "sass-mq": "~3.2.4",
-    "vanilla-lazyload": "~1.5.7"
+    "vanilla-lazyload": "~1.5.7",
+    "slick-carousel": "slick.js#~1.5.8"
   },
   "dependencies": {}
 }

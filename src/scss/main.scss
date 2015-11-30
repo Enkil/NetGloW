@@ -6,6 +6,7 @@
 
 @import "vendor/normalize";
 @import "vendor/mq";
+@import "vendor/slick";
 
 /**
 *  Include custom CSS files
@@ -13,7 +14,11 @@
 
 @import "includes/variables";
 @import "mixins/font-face";
+@import "mixins/transitions";
 @import "includes/png-sprite";
 @import "includes/svg-sprite";
 @import "includes/typography";
-@import "includes/outdate-browsers";
+//@import "includes/outdate-browsers";
+@import "includes/header";
+@import "includes/common";
+@import "includes/index-top-slider";
