@@ -904,14 +904,15 @@ The `sprites` mixin generates identical output to the CSS template
 }
 .speakers .slick-arrow {
     position : absolute;
-    top : calc(50% - 18px);
+    top : calc(35% - 18px);
+    z-index : 10; 
 
     display : inline-block;
     width : 22px;
     width : 22px;
     height : 36px;
     height : 36px;
-    padding : 0; 
+    padding : 0;
 
     background-color : transparent;
     background-image : url(../img/sprite/png-sprite.png);
@@ -932,7 +933,7 @@ The `sprites` mixin generates identical output to the CSS template
 }
 
 .speaker {
-    width : 275px;
+    width : 380px !important; 
 
     text-align : center;
 

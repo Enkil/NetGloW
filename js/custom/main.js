@@ -27,14 +27,15 @@ window.onload = function(){
 
     // Set up Slick carousel to index speakers slider
     $('.js-speakers-slider').slick({
-        lazyLoad: 'ondemand',
+        lazyLoad: 'progressive',
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
+        variableWidth: true,
         dots: false,
         arrows: true,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>'
+        prevArrow: '<button type="button" class="slick-prev" title="Prev Speaker"></button>',
+        nextArrow: '<button type="button" class="slick-next" title="Next Speaker"></button>'
     });
 };
 
