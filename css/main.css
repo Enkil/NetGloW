@@ -545,40 +545,40 @@ The `sprites` mixin generates identical output to the CSS template
 */
 @font-face {
     font-family : "Ek-Mukta-Light";
-    src : url("fonts/ek-mukta/light/ekmukta-light-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/ek-mukta/light/ekmukta-light-webfont.woff") format("woff"), url("fonts/ek-mukta/light/ekmukta-light-webfont.ttf") format("truetype"), url("fonts/ek-mukta/light/ekmukta-light-webfont.svg#Ek-Mukta-Light") format("svg"); 
-    src : url("fonts/ek-mukta/light/ekmukta-light-webfont.eot"), local("☺");
+    src : url("fonts/ek-mukta/light/EkMukta-Light.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/ek-mukta/light/EkMukta-Light.woff") format("woff"), url("fonts/ek-mukta/light/EkMukta-Light.ttf") format("truetype"), url("fonts/ek-mukta/light/EkMukta-Light.svg#Ek-Mukta-Light") format("svg"); 
+    src : url("fonts/ek-mukta/light/EkMukta-Light.eot"), local("☺");
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "Ek-Mukta-Light";
-        src : url("fonts/ek-mukta/light/ekmukta-light-webfont.svg#Ek-Mukta-Light") format("svg");
+        src : url("fonts/ek-mukta/light/EkMukta-Light.svg#Ek-Mukta-Light") format("svg");
     }
 }
 
 @font-face {
     font-family : "Ek-Mukta-Bold";
-    src : url("fonts/ek-mukta/bold/ekmukta-bold-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/ek-mukta/bold/ekmukta-bold-webfont.woff") format("woff"), url("fonts/ek-mukta/bold/ekmukta-bold-webfont.ttf") format("truetype"), url("fonts/ek-mukta/bold/ekmukta-bold-webfont.svg#Ek-Mukta-Bold") format("svg"); 
-    src : url("fonts/ek-mukta/bold/ekmukta-bold-webfont.eot"), local("☺");
+    src : url("fonts/ek-mukta/bold/EkMukta-Bold.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/ek-mukta/bold/EkMukta-Bold.woff") format("woff"), url("fonts/ek-mukta/bold/EkMukta-Bold.ttf") format("truetype"), url("fonts/ek-mukta/bold/EkMukta-Bold.svg#Ek-Mukta-Bold") format("svg"); 
+    src : url("fonts/ek-mukta/bold/EkMukta-Bold.eot"), local("☺");
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "Ek-Mukta-Bold";
-        src : url("fonts/ek-mukta/bold/ekmukta-bold-webfont.svg#Ek-Mukta-Bold") format("svg");
+        src : url("fonts/ek-mukta/bold/EkMukta-Bold.svg#Ek-Mukta-Bold") format("svg");
     }
 }
 
 @font-face {
     font-family : "Ek-Mukta-Medium";
-    src : url("fonts/ek-mukta/medium/ekmukta-medium-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/ek-mukta/medium/ekmukta-medium-webfont.woff") format("woff"), url("fonts/ek-mukta/medium/ekmukta-medium-webfont.ttf") format("truetype"), url("fonts/ek-mukta/medium/ekmukta-medium-webfont.svg#Ek-Mukta-Medium") format("svg"); 
-    src : url("fonts/ek-mukta/medium/ekmukta-medium-webfont.eot"), local("☺");
+    src : url("fonts/ek-mukta/medium/EkMukta-Medium.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/ek-mukta/medium/EkMukta-Medium.woff") format("woff"), url("fonts/ek-mukta/medium/EkMukta-Medium.ttf") format("truetype"), url("fonts/ek-mukta/medium/EkMukta-Medium.svg#Ek-Mukta-Medium") format("svg"); 
+    src : url("fonts/ek-mukta/medium/EkMukta-Medium.eot"), local("☺");
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "Ek-Mukta-Medium";
-        src : url("fonts/ek-mukta/medium/ekmukta-medium-webfont.svg#Ek-Mukta-Medium") format("svg");
+        src : url("fonts/ek-mukta/medium/EkMukta-Medium.svg#Ek-Mukta-Medium") format("svg");
     }
 }
 
@@ -595,10 +595,11 @@ html {
     font-size : 19px;
     line-height : 36px;
     color : #036;
+    font-style : normal;
 
     border-bottom : 2px solid #f90; 
 
-    font-family : "Ek Mukta", sans-serif;
+    font-family : "Ek-Mukta-Bold", sans-serif;
 }
 
 .header {
