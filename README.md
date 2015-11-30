@@ -1,3 +1,0 @@
-# AstraMediaGroup Web Starter Kit
-
-...
