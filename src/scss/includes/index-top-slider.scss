@@ -28,7 +28,10 @@
     left: 0;
     right: 0;
     &:hover{  background: linear-gradient(to bottom, #993300, #cc6600);  }
-    &:active{  border: 2px solid $color-btn-with-bg-text;  }
+    &:active{
+      border: 2px solid $color-btn-with-bg-text;
+      line-height: 78px;
+    }
   }
   &__btn-down{
     display: block;

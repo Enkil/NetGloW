@@ -38,7 +38,7 @@ module.exports = {
 
     // GitHub Pages options
     ghpOptions: {
-        remoteUrl: "git@github.com:Enkil/amg-webstarter-kit.git"
+        remoteUrl: "git@github.com:Enkil/NetGloW.git"
     },
 
     // jsDoc3 options for JS documentation generating

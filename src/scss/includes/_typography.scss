@@ -13,3 +13,13 @@ html {
 body {
   //@include font-family('Roboto-Regular',normal,normal,sans-serif);
 }
+
+.h2-title{
+  @include font-family('Ek-Mukta-Bold',bold);
+  margin: 0;
+  display: inline-block;
+  font-size: 19px;
+  line-height: 36px;
+  color: $color-h2-title;
+  border-bottom: 2px solid $color-h2-title-border;
+}

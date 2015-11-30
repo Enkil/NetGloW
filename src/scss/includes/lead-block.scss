@@ -1,0 +1,34 @@
+.lead-block{
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 65px;
+  text-align: center;
+
+  &__text{
+    @include font-family('Ek-Mukta-Medium');
+    font-weight:400;
+    color: $color-text;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  &__btn{
+    @include font-family('Ek-Mukta-Bold',bold);
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 25px;
+    border: 1px solid $color-main-dark;
+    color: $color-main-dark;
+    border-radius: 20px;
+    text-decoration: none;
+    &:hover{  background: linear-gradient(to top, rgba(0,0,0,0.05), rgba(255,255,255,1));  }
+    &:active{
+      background: linear-gradient(to top, rgba(0,0,0,0.05), rgba(255,255,255,1));
+      border: 2px solid $color-main-dark;
+      line-height: 38px;
+    }
+  }
+}
