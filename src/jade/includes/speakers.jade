@@ -1,0 +1,10 @@
+// Speakers
+include ../mixins/speaker
+section.speakers
+    .container.container--column
+        h2.h2-title Keynotes & Invited talks
+        h3.h3-title Keynote speakers
+
+        .speakers__slider.js-speakers-slider
+            - for (var i=0; i<6; i++ )
+                +speaker

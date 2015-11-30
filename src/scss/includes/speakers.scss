@@ -1,0 +1,90 @@
+.speakers{
+  background-color: $color-speakers-bg;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__slider{
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    position: relative;
+    //padding: 0 60px;
+  }
+
+  .slick-arrow{
+    @include sprite($sprite-speakers-arrow);
+    position: absolute;
+    top: calc(35% - 18px);
+    //font-size: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 22px;
+    height: 36px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    z-index: 10;
+  }
+
+  .slick-prev{
+    left: 0;
+  }
+  .slick-next{
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+}
+
+.speaker{
+  text-align: center;
+  //width: 275px;
+  outline: none;
+  width: 380px !important;
+
+  &__photo{
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: contain;
+    display: inline-block;
+    margin-bottom: 20px;
+    display: inline-block !important;
+  }
+  &__name{
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-main-light;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  &__seminar{
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: $color-main-light;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  &__btn{
+    @include transition();
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    &:after{
+      content: '';
+      display: inline-block;
+      @include sprite($sprite-speakers-btn-arrow);
+      width: 18px;
+      height: 18px;
+      margin-left: 20px;
+      vertical-align: middle;
+    }
+    &:hover:after{  @include sprite($sprite-speakers-btn-arrow-hover);  }
+    &:active:after{  @include sprite($sprite-speakers-btn-arrow-active);  }
+  }
+}

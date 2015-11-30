@@ -9,8 +9,8 @@
 //@include font-face('Ek-Mukta-Medium', ek-mukta, medium, EkMukta-Medium);
 
 html {
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  //font-size: $base-font-size;
+  //line-height: $base-line-height;
 }
 
 body {
@@ -18,11 +18,29 @@ body {
 }
 
 .h2-title{
-  @include font-family('Ek-Mukta-Bold',bold);
+  //@include font-family('Ek-Mukta-Bold',bold);
+  font-family: 'Ek Mukta', sans-serif;
+  font-weight: 700;
   margin: 0;
+  margin-bottom: 25px;
   display: inline-block;
   font-size: 19px;
-  line-height: 36px;
+  line-height: 19px;
   color: $color-h2-title;
   border-bottom: 2px solid $color-h2-title-border;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.h3-title{
+  //@include font-family('Ek-Mukta-Bold',bold);
+  font-family: 'Ek Mukta', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 35px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  text-transform: uppercase;
 }
