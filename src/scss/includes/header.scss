@@ -1,4 +1,5 @@
 .header{
+  @include box-shadow(0,9px,6px,rgba(0,0,0,.04),inset);
 
   &__top{
     justify-content: space-between;
@@ -44,6 +45,7 @@
 }
 
 .top-menu{
+  @include box-shadow(0,9px,6px,rgba(0,0,0,.04),inset);
   background-color: $color-bg;
   padding-top: 20px;
   padding-bottom: 20px;

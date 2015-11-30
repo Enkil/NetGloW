@@ -9,6 +9,7 @@
   &__btn{
     @include font-family('Ek-Mukta-Bold');
     display: block;
+    box-sizing: border-box;
     margin: 0 auto;
     width: 370px;
     height: 80px;
@@ -75,5 +76,4 @@
     }
     button{  display: none;}
   }
-
 }
