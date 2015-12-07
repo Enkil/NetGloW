@@ -37,5 +37,17 @@ window.onload = function(){
         prevArrow: '<button type="button" class="slick-prev" title="Previous Speaker"></button>',
         nextArrow: '<button type="button" class="slick-next" title="Next Speaker"></button>'
     });
+
+    // Set up Slick carousel to index programm slider
+    $('.js-programm-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        //variableWidth: true,
+        dots: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev" title="Previous Programm date"></button>',
+        nextArrow: '<button type="button" class="slick-next" title="Next Programm date"></button>'
+    });
 };
 

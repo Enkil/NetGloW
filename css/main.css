@@ -544,19 +544,30 @@ The `sprites` mixin generates identical output to the CSS template
 */
 .h2-title {
     display : inline-block;
+    width : 100%; 
     margin : 0;
-    margin-bottom : 25px;
-    padding-bottom : 25px; 
 
     font-weight : 700;
     font-size : 19px;
     line-height : 19px;
+    text-align : center;
     color : #036;
     text-transform : uppercase;
 
-    border-bottom : 2px solid #f90;
-
     font-family : "Ek Mukta", sans-serif;
+}
+.h2-title:after {
+    content : "";
+
+    display : block;
+    width : 70px;
+    height : 2px;
+    margin : 25px auto; 
+
+    background-color : #f90;
+}
+.h2-title--white {
+    color : #fff;
 }
 
 .h3-title {
@@ -805,7 +816,7 @@ The `sprites` mixin generates identical output to the CSS template
     margin : 0 auto;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 0;
+    background-position : -31px 0;
 }
 .top-slider .slick-dots {
     position : absolute;
@@ -899,7 +910,7 @@ The `sprites` mixin generates identical output to the CSS template
 .speakers__slider {
     position : relative; 
 
-    width : calc(100% - 60px);
+    width : 100%;
     margin : 0 auto;
 }
 .speakers .slick-arrow {
@@ -916,7 +927,7 @@ The `sprites` mixin generates identical output to the CSS template
 
     background-color : transparent;
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 -24px;
+    background-position : -71px 0;
     border : none;
     outline : none;
     cursor : pointer;
@@ -933,7 +944,7 @@ The `sprites` mixin generates identical output to the CSS template
 }
 
 .speaker {
-    width : 380px !important; 
+    width : 400px !important; 
 
     text-align : center;
 
@@ -998,19 +1009,130 @@ The `sprites` mixin generates identical output to the CSS template
     vertical-align : middle; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -40px -38px;
+    background-position : -50px -24px;
 }
 .speaker__btn:hover:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -40px -19px;
+    background-position : -31px -24px;
 }
 .speaker__btn:active:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -40px 0;
+    background-position : -71px -37px;
+}
+
+.programm {
+    padding-bottom : 80px;
+}
+.programm__title {
+    position : relative;
+
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-direction : column;
+        -ms-flex-direction : column;
+            flex-direction : column;
+    -webkit-justify-content : center;
+            justify-content : center;
+    -webkit-align-items : center;
+            align-items : center;
+    width : 100%;
+    margin-bottom : 105px; 
+    padding-top : 50px;
+    padding-bottom : 30px;
+
+    background-color : #036;
+
+    -webkit-box-align : center;
+    -webkit-box-direction : normal;
+    -webkit-box-orient : vertical;
+    -webkit-box-pack : center;
+    -ms-flex-align : center;
+    -ms-flex-pack : center;
+}
+.programm__title:after {
+    content : "";
+    position : absolute;
+    right : 0;
+    left : 0;
+
+    display : block;
+    width : 0;
+    height : 0;
+    margin : 0 auto; 
+
+    border-top : 65px solid #036;
+    border-right : 50px solid transparent;
+    border-left : 50px solid transparent;
+}
+.programm__slider {
+    position : relative; 
+
+    width : 100%;
+    margin : 0 auto;
+}
+.programm__day {
+    text-align : center;
+}
+.programm__date {
+    margin-bottom : 10px; 
+
+    font-weight : 700;
+    font-size : 16px;
+    line-height : 30px;
+    color : #f90;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.programm__list {
+    margin : 0;
+    padding : 0;
+
+    list-style : none;
+}
+.programm__item {
+    margin : 25px 0; 
+
+    font-weight : 700;
+    font-size : 15px;
+    line-height : 15px;
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.programm .slick-arrow {
+    position : absolute;
+    top : calc(35% - 28px);
+    z-index : 10; 
+
+    display : inline-block;
+    width : 30px;
+    width : 30px;
+    height : 57px;
+    height : 57px;
+    padding : 0;
+
+    background-color : transparent;
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 0;
+    border : none;
+    outline : none;
+    cursor : pointer;
+}
+.programm .slick-prev {
+    left : 0;
+}
+.programm .slick-next {
+    right : 0;
+
+    -webkit-transform : rotate(180deg);
+        -ms-transform : rotate(180deg);
+            transform : rotate(180deg);
 }
