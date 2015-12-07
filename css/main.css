@@ -569,6 +569,9 @@ The `sprites` mixin generates identical output to the CSS template
 .h2-title--white {
     color : #fff;
 }
+.h2-title--wo-line:after {
+    display : none;
+}
 
 .h3-title {
     display : inline-block;
@@ -739,6 +742,20 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-box-orient : vertical;
     -ms-flex-align : center;
     -ms-flex-line-pack : center;
+}
+.container--hor-center {
+    -webkit-justify-content : center;
+            justify-content : center; 
+    -webkit-align-content : center;
+            align-content : center;
+    -webkit-align-items : center;
+            align-items : center;
+
+    -webkit-box-align : center;
+    -webkit-box-pack : center;
+    -ms-flex-align : center;
+    -ms-flex-line-pack : center;
+    -ms-flex-pack : center;
 }
 
 .top-slider {
@@ -1135,4 +1152,42 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-transform : rotate(180deg);
         -ms-transform : rotate(180deg);
             transform : rotate(180deg);
+}
+
+.submit {
+    padding : 65px 0; 
+
+    background-color : #036;
+}
+.submit__btn {
+    display : inline-block;
+    height : 58px;
+    margin-top : 30px;
+    padding-right : 55px;
+    padding-left : 55px;
+
+    font-weight : 700;
+    font-size : 19px;
+    line-height : 58px;
+    text-align : center;
+    color : #036;
+    text-transform : uppercase;
+    text-decoration : none;
+
+    background-color : #fff;
+    border : 1px solid #f90; 
+    border-radius : 40px;
+
+    -webkit-transition : background-color .5s linear;
+            transition : background-color .5s linear;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submit__btn:hover {
+    background-color : #f90;
+}
+.submit__btn:active {
+    height : 60px;
+
+    line-height : 60px;
 }
