@@ -22,14 +22,22 @@ body {
   font-family: 'Ek Mukta', sans-serif;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 25px;
   display: inline-block;
   font-size: 19px;
   line-height: 19px;
   color: $color-h2-title;
-  border-bottom: 2px solid $color-h2-title-border;
   text-transform: uppercase;
-  padding-bottom: 25px;
+  text-align: center;
+  width: 100%;
+  &:after{
+    content: '';
+    display: block;
+    background-color: $color-h2-title-border;
+    height: 2px;
+    width: 70px;
+    margin: 25px auto;
+  }
+  &--white{  color: $color-white;}
 }
 
 .h3-title{

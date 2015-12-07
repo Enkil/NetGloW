@@ -1,0 +1,10 @@
+include ../mixins/programm-day
+// Programm
+section.programm
+    .programm__title
+        h2.h2-title.h2-title--white Programme
+    .container
+        .programm__slider.js-programm-slider
+            - for (var i=0; i<6; i++ )
+                +programm-day
+

@@ -3,6 +3,7 @@ module.exports = {
     pathTo: {
             Src: {
                 Styles: 'src/scss/main.scss',
+                StylesWatch: 'src/scss/**/*.scss',
                 Jade: 'src/jade/**/*.jade',
                 Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
                 PngSprite: 'src/img/sprite/**/*.png',
