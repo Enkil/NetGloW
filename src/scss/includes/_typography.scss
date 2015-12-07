@@ -38,6 +38,7 @@ body {
     margin: 25px auto;
   }
   &--white{  color: $color-white;}
+  &--wo-line:after{  display: none;}
 }
 
 .h3-title{
