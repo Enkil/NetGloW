@@ -758,6 +758,70 @@ The `sprites` mixin generates identical output to the CSS template
     -ms-flex-pack : center;
 }
 
+.triangle-arrow {
+    position : relative;
+    z-index : 10; 
+
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-direction : column;
+        -ms-flex-direction : column;
+            flex-direction : column;
+    -webkit-justify-content : center;
+            justify-content : center;
+    -webkit-align-items : center;
+            align-items : center;
+    width : 100%;
+    margin-bottom : 105px;
+    padding-top : 50px;
+    padding-bottom : 30px;
+
+    background-color : #036;
+
+    -webkit-box-align : center;
+    -webkit-box-direction : normal;
+    -webkit-box-orient : vertical;
+    -webkit-box-pack : center;
+    -ms-flex-align : center;
+    -ms-flex-pack : center;
+}
+.triangle-arrow--mb0 {
+    margin-bottom : 0;
+}
+.triangle-arrow:after {
+    content : "";
+    position : absolute;
+    right : 0;
+    left : 0;
+
+    display : block;
+    width : 0;
+    height : 0;
+    margin : 0 auto; 
+
+    border-top : 65px solid #036;
+    border-right : 50px solid transparent;
+    border-left : 50px solid transparent;
+}
+.triangle-arrow__text {
+    margin : 0; 
+
+    font-weight : 700;
+    font-size : 16px;
+    line-height : 36px;
+    text-align : center;
+    color : #fff;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+
+.map {
+    width : 100%; 
+    height : 500px;
+}
+
 .top-slider {
     position : relative; 
 
@@ -1046,49 +1110,6 @@ The `sprites` mixin generates identical output to the CSS template
 .programm {
     padding-bottom : 80px;
 }
-.programm__title {
-    position : relative;
-
-    display : -webkit-box;
-    display : -webkit-flex;
-    display : -ms-flexbox;
-    display :         flex;
-    -webkit-flex-direction : column;
-        -ms-flex-direction : column;
-            flex-direction : column;
-    -webkit-justify-content : center;
-            justify-content : center;
-    -webkit-align-items : center;
-            align-items : center;
-    width : 100%;
-    margin-bottom : 105px; 
-    padding-top : 50px;
-    padding-bottom : 30px;
-
-    background-color : #036;
-
-    -webkit-box-align : center;
-    -webkit-box-direction : normal;
-    -webkit-box-orient : vertical;
-    -webkit-box-pack : center;
-    -ms-flex-align : center;
-    -ms-flex-pack : center;
-}
-.programm__title:after {
-    content : "";
-    position : absolute;
-    right : 0;
-    left : 0;
-
-    display : block;
-    width : 0;
-    height : 0;
-    margin : 0 auto; 
-
-    border-top : 65px solid #036;
-    border-right : 50px solid transparent;
-    border-left : 50px solid transparent;
-}
 .programm__slider {
     position : relative; 
 
@@ -1190,4 +1211,66 @@ The `sprites` mixin generates identical output to the CSS template
     height : 60px;
 
     line-height : 60px;
+}
+
+.logos {
+    padding-top : 65px;
+}
+
+.company-logo {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-justify-content : center;
+            justify-content : center;
+    -webkit-align-items : center;
+            align-items : center;
+    width : 175px;
+    height : 175px;
+    margin : 0 60px;
+    margin-bottom : 60px;
+
+    text-decoration : none; 
+
+    -webkit-box-align : center;
+    -webkit-box-pack : center;
+    -ms-flex-align : center;
+    -ms-flex-pack : center;
+}
+.company-logo__img {
+    -o-object-fit : contain;
+       object-fit : contain;
+}
+.company-logo__name {
+    width : 135px;
+
+    font-weight : 300; 
+    font-size : 16px;
+    line-height : 18px;
+    text-align : center;
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+
+.organizers, .partners {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-wrap : wrap;
+            flex-wrap : wrap;
+    -webkit-justify-content : space-between;
+            justify-content : space-between; 
+
+    -webkit-box-pack : justify;
+    -ms-flex-pack : justify;
+        -ms-flex-wrap : wrap;
+}
+.organizers:first-child, .partners:first-child {
+    margin-left : 0;
+}
+.organizers:last-child, .partners:last-child {
+    margin-right : 0;
 }
