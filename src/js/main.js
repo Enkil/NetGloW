@@ -49,5 +49,8 @@ window.onload = function(){
         prevArrow: '<button type="button" class="slick-prev" title="Previous Programm date"></button>',
         nextArrow: '<button type="button" class="slick-next" title="Next Programm date"></button>'
     });
+
+    // Google Map
+    findMapAndInit('map');
 };
 

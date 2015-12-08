@@ -8,7 +8,7 @@ module.exports = {
                 Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
                 PngSprite: 'src/img/sprite/**/*.png',
                 GHPages: 'build/**/*',
-                JS: 'src/js/**/*.*',
+                JS: 'src/js/**/*.js',
                 JSVendor: 'vendor/**/*.*',
                 BowerJSVendor: 'src/js/vendor/',
                 JSCustom: ['custom/**/*.js', 'main.js', '!custom/toHead/**/*.js'],

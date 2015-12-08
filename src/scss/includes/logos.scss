@@ -1,0 +1,35 @@
+.logos{
+  padding-top: 65px;
+}
+
+.company-logo{
+  width: 175px;
+  height: 175px;
+  margin: 0 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &__img{
+    object-fit: contain;
+  }
+  &__name{
+    width: 135px;
+    text-align: center;
+    color: $color-main-light;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 300;
+  }
+}
+
+.organizers, .partners{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &:first-child{  margin-left: 0;}
+  &:last-child{  margin-right: 0;}
+}
