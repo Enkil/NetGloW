@@ -593,9 +593,15 @@ The `sprites` mixin generates identical output to the CSS template
 .header__top {
     -webkit-justify-content : space-between;
             justify-content : space-between; 
+    box-sizing : border-box;
 
     -webkit-box-pack : justify;
     -ms-flex-pack : justify;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .header__top {
+        padding : 0 10px;
+    }
 }
 .header__logo {
     position : relative;
@@ -604,12 +610,22 @@ The `sprites` mixin generates identical output to the CSS template
     width : 336px;
     height : 152px;
 }
+@media (min-width: 20em) and (max-width: 74.99em) {
+    .header__logo {
+        left : 0;
+    }
+}
 .header__logo-img {
     width : 336px;
     height : 152px;
 
     -o-object-fit : contain;
        object-fit : contain;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .header__logo-img {
+        width : 100%;
+    }
 }
 .header__text {
     padding-top : 28px; 
@@ -672,12 +688,12 @@ The `sprites` mixin generates identical output to the CSS template
     -ms-flex-pack : justify;
         -ms-flex-wrap : wrap;
 }
-.top-menu__block {
-    -webkit-flex-grow : 1;
-            flex-grow : 1; 
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .top-menu__block {
+        width : 100%;
 
-    -webkit-box-flex : 1;
-    -ms-flex-positive : 1;
+        text-align : center;
+    }
 }
 .top-menu__list {
     display : -webkit-box;
@@ -715,6 +731,98 @@ The `sprites` mixin generates identical output to the CSS template
 .top-menu__link:active {
     color : #069;
 }
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .top-menu__link {
+        font-size : 0;
+        line-height : 0;
+    }
+}
+.top-menu__link--mobile-open {
+    font-size : 15px;
+    line-height : 40px;
+}
+.top-menu__toggler {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-align-items : center;
+            align-items : center;
+    width : 3em;
+    height : 3em;
+
+    line-height : 3em;
+
+    -webkit-user-select : none;
+       -moz-user-select : none;
+        -ms-user-select : none;
+            user-select : none; 
+
+    -webkit-box-align : center;
+    -ms-flex-align : center;
+}
+.top-menu__toggler span {
+    position : relative;
+
+    display : inline-block;
+    width : 100%;
+    height : .3rem;
+
+    vertical-align : bottom;
+
+    background : #fff;
+    border-radius : .2rem;
+
+    -webkit-transition : background .3s .5s;
+            transition : background .3s .5s;
+}
+.top-menu__toggler span:before, .top-menu__toggler span:after {
+    content : "";
+    position : absolute;
+    left : 0;
+
+    width : 100%;
+    height : .3rem;
+
+    background : #fff;
+    border-radius : .2rem;
+    -webkit-transform-origin : 50% 50%;
+        -ms-transform-origin : 50% 50%;
+            transform-origin : 50% 50%;
+
+    -webkit-transition : top .3s .6s, -webkit-transform .3s;
+            transition : top .3s .6s, -webkit-transform .3s;
+            transition : top .3s .6s, transform .3s;
+            transition : top .3s .6s, transform .3s, -webkit-transform .3s;
+}
+.top-menu__toggler span:before {
+    top : 1rem;
+}
+.top-menu__toggler span:after {
+    top : -1rem;
+}
+.top-menu__toggler--close > span {
+    background : transparent; 
+
+    -webkit-transition : background .3s 0;
+            transition : background .3s 0;
+}
+.top-menu__toggler--close > span:before, .top-menu__toggler--close > span:after {
+    top : 0; 
+
+    -webkit-transition : top .3s, -webkit-transform .3s .5s;
+            transition : top .3s, -webkit-transform .3s .5s;
+            transition : top .3s, transform .3s .5s;
+            transition : top .3s, transform .3s .5s, -webkit-transform .3s .5s;
+}
+.top-menu__toggler--close > span:before {
+    -webkit-transform : rotate3d(0, 0, 1, 45deg);
+            transform : rotate3d(0, 0, 1, 45deg);
+}
+.top-menu__toggler--close > span:after {
+    -webkit-transform : rotate3d(0, 0, 1, -45deg);
+            transform : rotate3d(0, 0, 1, -45deg);
+}
 
 .container {
     display : -webkit-box;
@@ -723,8 +831,9 @@ The `sprites` mixin generates identical output to the CSS template
     display :         flex;
     -webkit-flex-wrap : wrap;
             flex-wrap : wrap;
+    box-sizing : border-box; 
     width : 1200px;
-    margin : 0 auto; 
+    margin : 0 auto;
 
         -ms-flex-wrap : wrap;
 }
@@ -756,6 +865,12 @@ The `sprites` mixin generates identical output to the CSS template
     -ms-flex-align : center;
     -ms-flex-line-pack : center;
     -ms-flex-pack : center;
+}
+@media (min-width: 20em) and (max-width: 74.99em) {
+    .container {
+        width : 100%;
+        padding : 0 10px;
+    }
 }
 
 .triangle-arrow {
@@ -823,9 +938,11 @@ The `sprites` mixin generates identical output to the CSS template
 }
 
 .top-slider {
-    position : relative; 
+    position : relative;
 
     width : 100vw;
+
+    text-align : center;
 }
 .top-slider__slide {
     width : 100vw;
@@ -840,7 +957,7 @@ The `sprites` mixin generates identical output to the CSS template
     bottom : 210px;
     left : 0;
 
-    display : block;
+    display : inline-block;
     box-sizing : border-box;
     width : 370px;
     height : 80px;
@@ -860,6 +977,11 @@ The `sprites` mixin generates identical output to the CSS template
     border-radius : 35px;
 
     font-family : "Ek Mukta", sans-serif;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .top-slider__btn {
+        width : 90%;
+    }
 }
 .top-slider__btn:hover {
     background : -webkit-linear-gradient(top, #930, #c60);
@@ -1025,14 +1147,11 @@ The `sprites` mixin generates identical output to the CSS template
 }
 
 .speaker {
-    width : 400px !important; 
-
     text-align : center;
 
     outline : none;
 }
 .speaker__photo {
-    display : inline-block;
     display : inline-block !important; 
     width : 275px;
     height : 275px;
@@ -1043,6 +1162,12 @@ The `sprites` mixin generates identical output to the CSS template
 
     -o-object-fit : contain;
        object-fit : contain;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .speaker__photo {
+        width : 50%;
+        height : auto;
+    }
 }
 .speaker__name {
     margin : 0;
@@ -1164,6 +1289,11 @@ The `sprites` mixin generates identical output to the CSS template
     outline : none;
     cursor : pointer;
 }
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .programm .slick-arrow {
+        top : -15px;
+    }
+}
 .programm .slick-prev {
     left : 0;
 }
@@ -1284,8 +1414,19 @@ The `sprites` mixin generates identical output to the CSS template
 .footer__data {
     width : 33%;
 }
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .footer__data {
+        width : 100%;
+        padding-left : 50px;
+    }
+}
 .footer__data--contacts {
     padding-top : 15px;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .footer__data--contacts {
+        padding-top : 47px;
+    }
 }
 .footer__title {
     margin : 0;
