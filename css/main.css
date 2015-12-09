@@ -836,8 +836,11 @@ The `sprites` mixin generates identical output to the CSS template
     display :         flex;
     -webkit-flex-wrap : wrap;
             flex-wrap : wrap;
-    box-sizing : border-box; 
-    width : 1200px;
+    box-sizing : border-box;
+    width : 100%;
+    min-width : 320px;
+    min-width : 320px; 
+    max-width : 1200px;
     margin : 0 auto;
 
         -ms-flex-wrap : wrap;
