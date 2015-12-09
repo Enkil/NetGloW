@@ -15,6 +15,16 @@ window.onload = function(){
         data_srcset: "original" // original-set
     });
 
+    // Top menu toggler
+    var toggler = document.querySelector('.js-top-toggler');
+    var menuLinks = document.querySelectorAll('.top-menu__link');
+    toggler.onclick = function(e){
+        e.preventDefault();
+        toggler.classList.toggle('top-menu__toggler--close');
+        for (i=0; i < menuLinks.length; i++) {
+            menuLinks[i].classList.toggle('top-menu__link--mobile-open');
+        }
+    };
 
     // Set up Slick carousel to index top slider
     $('.js-top-slider').slick({
@@ -31,7 +41,21 @@ window.onload = function(){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
+        //variableWidth: true,
         dots: false,
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev" title="Previous Speaker"></button>',

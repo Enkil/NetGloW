@@ -1,6 +1,7 @@
 .top-slider{
   width: 100vw;
   position: relative;
+  text-align: center;
   &__slide{
     height: 715px;
     width: 100vw;
@@ -9,7 +10,7 @@
   &__btn{
     //@include font-family('Ek-Mukta-Bold');
     font-family: 'Ek Mukta', sans-serif;
-    display: block;
+    display: inline-block;
     box-sizing: border-box;
     margin: 0 auto;
     width: 370px;
@@ -28,6 +29,9 @@
     bottom: 210px;
     left: 0;
     right: 0;
+    @include mq($from: mobile, $until: tablet) {
+      width: 90%;
+    }
     &:hover{  background: linear-gradient(to bottom, #993300, #cc6600);  }
     &:active{
       border: 2px solid $color-btn-with-bg-text;

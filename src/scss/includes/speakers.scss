@@ -38,7 +38,7 @@
   text-align: center;
   //width: 275px;
   outline: none;
-  width: 400px !important;
+  //width: 400px !important;
 
   &__photo{
     width: 275px;
@@ -46,9 +46,12 @@
     border-radius: 50%;
     background-color: #fff;
     object-fit: contain;
-    display: inline-block;
     margin-bottom: 20px;
     display: inline-block !important;
+    @include mq($from: mobile, $until: tablet) {
+      width: 50%;
+      height: auto;
+    }
   }
   &__name{
     font-family: 'Ek Mukta', sans-serif;
