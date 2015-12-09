@@ -22,8 +22,6 @@ window.onload = function(){
         e.preventDefault();
         toggler.classList.toggle('top-menu__toggler--close');
         for (i=0; i < menuLinks.length; i++) {
-            //menuLinks[i].style.fontSize='15px';
-            //menuLinks[i].style.lineHeight='40px';
             menuLinks[i].classList.toggle('top-menu__link--mobile-open');
         }
     };
