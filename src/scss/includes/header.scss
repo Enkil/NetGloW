@@ -111,7 +111,10 @@
     }
   }
   &__toggler{
-    display: flex;
+    @include mq($from: mobile, $until: tablet) {
+      display: flex;
+    }
+    display: none;
     align-items: center;
     width: 3em;
     height: 3em;
