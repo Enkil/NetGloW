@@ -17,8 +17,9 @@ function initMap(mapIDCurrent) {
         title:"Networks in the Global World",
         icon: image
     });
-    var map = new google.maps.Map(mapIDCurrent, myOptions); // Init map
 
+    var map = new google.maps.Map(mapIDCurrent, myOptions); // Init map
+    marker.setMap(map);
 }
 
 function findMapAndInit(mapID) {

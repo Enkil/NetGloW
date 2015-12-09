@@ -1,9 +1,12 @@
 .container{
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   box-sizing: border-box;
+  min-width: 320px;
   &--column{
     flex-direction: column;
     align-items: center;
