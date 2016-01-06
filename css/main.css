@@ -586,6 +586,9 @@ The `sprites` mixin generates identical output to the CSS template
 
     font-family : "Ek Mukta", sans-serif;
 }
+.h3-title--blue {
+    color : #069;
+}
 
 .header {
     box-shadow : inset 0 9px 6px rgba(0, 0, 0, .04);
@@ -945,6 +948,14 @@ The `sprites` mixin generates identical output to the CSS template
     height : 500px;
 }
 
+.h2-title.margin-top {
+    margin-top : 95px;
+}
+
+.h3-title.margin-bottom {
+    margin-bottom : 70px;
+}
+
 .top-slider {
     position : relative;
 
@@ -1223,21 +1234,158 @@ The `sprites` mixin generates identical output to the CSS template
     vertical-align : middle; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -31px -73px;
+    background-position : -121px -19px;
 }
 .speaker__btn:hover:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -71px -49px;
+    background-position : -121px 0;
 }
 .speaker__btn:active:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -80px;
+    background-position : -67px -73px;
+}
+
+.speaker-block {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-wrap : wrap;
+            flex-wrap : wrap;
+    margin-bottom : 90px; 
+
+        -ms-flex-wrap : wrap;
+}
+.speaker-block__left {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-wrap : wrap;
+            flex-wrap : wrap;
+    -webkit-justify-content : center;
+            justify-content : center;
+    -webkit-align-items : center;
+            align-items : center;
+    width : 33%;
+    padding : 0 10px; 
+
+    text-align : center;
+
+    -webkit-box-align : center;
+    -webkit-box-pack : center;
+    -ms-flex-align : center;
+    -ms-flex-pack : center;
+        -ms-flex-wrap : wrap;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .speaker-block__left {
+        width : 100%;
+    }
+}
+.speaker-block__right {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-wrap : wrap;
+            flex-wrap : wrap; 
+    -webkit-justify-content : flex-start;
+            justify-content : flex-start;
+    width : 50%;
+
+    text-align : left;
+
+    -webkit-box-pack : start;
+    -ms-flex-pack : start;
+        -ms-flex-wrap : wrap;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .speaker-block__right {
+        width : 100%;
+    }
+}
+.speaker-block__photo {
+    width : 275px;
+    max-width : 100%;
+    height : 275px;
+
+    border-radius : 50%; 
+
+    -o-object-fit : contain;
+       object-fit : contain;
+}
+.speaker-block__name {
+    width : 100%;
+    margin-top : 0;
+    margin-bottom : 0;
+
+    font-weight : 500;
+    font-size : 16px;
+    line-height : 16px; 
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.speaker-block__text {
+    width : 100%;
+    margin-top : 30px;
+
+    font-weight : 500;
+    font-size : 14px;
+    line-height : 18px;
+    color : #036; 
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.speaker-block__icons {
+    width : 100%;
+    margin-top : 20px;
+}
+.speaker-block__icon {
+    display : inline-block;
+    margin : 0 7px; 
+
+    background-repeat : no-repeat;
+    cursor : pointer;
+}
+.speaker-block__icon--doc {
+    width : 19px;
+    width : 19px;
+    height : 21px;
+    height : 21px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -98px -37px;
+}
+.speaker-block__icon--doc:hover {
+    width : 19px;
+    height : 21px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -98px -59px;
+}
+.speaker-block__icon--doc:active {
+    width : 19px;
+    height : 21px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -98px -81px;
+}
+.speaker-block__icon--camera {
+    width : 25px;
+    width : 25px;
+    height : 21px;
+    height : 21px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -71px -49px;
 }
 
 .programm {
@@ -1471,7 +1619,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 9px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -114px -37px;
+    background-position : -121px -51px;
 }
 .footer__link {
     font-weight : 300;
@@ -1509,7 +1657,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 23px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -37px;
+    background-position : -31px -73px;
 }
 .footer__contacts--phone:before {
     top : 7px; 
@@ -1518,7 +1666,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 18px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -61px;
+    background-position : -47px -73px;
 }
 .footer__contacts--mail:before {
     top : 12px; 
@@ -1527,7 +1675,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 12px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -50px -73px;
+    background-position : -121px -38px;
 }
 
 .icon {
