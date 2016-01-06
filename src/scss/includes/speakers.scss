@@ -90,3 +90,85 @@
     &:active:after{  @include sprite($sprite-speakers-btn-arrow-active);  }
   }
 }
+
+
+.speaker-block{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+
+  &__left{
+    width: 33%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    @include mq($from: mobile, $until: tablet) {
+      width: 100%;
+    }
+  }
+  &__right{
+    width: 50%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @include mq($from: mobile, $until: tablet) {
+      width: 100%;
+    }
+  }
+  &__photo{
+    width: 275px;
+    height: 275px;
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  &__name{
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 500;
+    color: $color-main-light;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 16px;
+  }
+  &__text{
+    width: 100%;
+    margin-top: 30px;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-main-dark;
+  }
+  &__icons{
+    width: 100%;
+    margin-top: 20px;
+  }
+  &__icon{
+    display: inline-block;
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin:0 7px;
+
+    &--doc{
+      @include sprite($sprite-doc-icon-norm);
+      width: 19px;
+      height: 21px;
+      &:hover{@include sprite($sprite-doc-icon-hover);}
+      &:active{@include sprite($sprite-doc-icon-click);}
+    }
+    &--camera{
+      @include sprite($sprite-video-icon-norm);
+      width: 25px;
+      height: 21px;
+      //&:hover{@include sprite($sprite-video-icon-hover);}
+      //&:active{@include sprite($sprite-video-icon-click);}
+    }
+  }
+}

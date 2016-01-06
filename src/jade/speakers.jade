@@ -1,0 +1,32 @@
+include mixins/speaker-page
+
+doctype
+html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
+
+    include includes/_head
+
+    body
+
+        include includes/_header
+
+        // Main
+        main
+
+            .container.container--column
+                h2.h2-title.margin-top Keynotes & Invited talks
+                h3.h3-title.h3-title--blue.margin-bottom Keynote speakers
+
+            .container
+                - for (var i=0; i<2; i++ )
+                    +speaker-page
+
+            .container.container--column
+                h3.h3-title.h3-title--blue.margin-bottom Invited speakers
+
+            .container
+                - for (var i=0; i<2; i++ )
+                    +speaker-page
+
+        include includes/_footer
+
+        //include includes/_outdate-browers

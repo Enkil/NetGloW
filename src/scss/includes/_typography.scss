@@ -52,4 +52,7 @@ body {
   line-height: 16px;
   color: #fff;
   text-transform: uppercase;
+  &--blue{
+    color: $color-main-light;
+  }
 }
