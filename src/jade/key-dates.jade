@@ -1,0 +1,27 @@
+doctype
+html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
+
+    include includes/_head
+
+    body
+
+        include includes/_header
+
+        // Main
+        main
+
+            .container.container--column
+                h2.h2-title.margin-top Key Dates
+
+            .container.container--hor-center
+                .keydates
+                    ul.keydates__list
+                        - for (i=0; i<5; i++)
+                            li.keydates__item
+                                time(datetime='2016-02-01').keydates__date Feb 1 2016
+                                span.keydates__event Abstract submission deadline
+
+
+        include includes/_footer
+
+        //include includes/_outdate-browers

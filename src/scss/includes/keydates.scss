@@ -1,0 +1,43 @@
+.keydates{
+  width: 66.66%;
+  padding: 90px 70px;
+  border: 1px solid $color-main-dark;
+  border-radius: 10px;
+  @include box-shadow(0, 0, 7px, rgba(0,0,0,.08));
+  margin-bottom: 125px;
+  margin-top: 40px;
+
+  &__list{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &:after{
+      content: '';
+      display: block;
+      background-color: $color-h2-title-border;
+      height: 2px;
+      width: 100%;
+      margin: 30px auto;
+    }
+  }
+  &__date{
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-main-dark;
+    font-family: "Ek Mukta", sans-serif;
+    font-weight: 700;
+  }
+  &__event{
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-main-light;
+    font-family: "Ek Mukta", sans-serif;
+    font-weight: 500;
+    margin-right: 27%;
+  }
+}
