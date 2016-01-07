@@ -1,0 +1,30 @@
+include mixins/speaker-page
+
+doctype
+html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
+
+    include includes/_head
+
+    body
+
+        include includes/_header
+
+        // Main
+        main
+
+            .container.container--column
+                h2.h2-title.margin-top Contacts
+
+            .container
+                h3.contacts-title Centre for German and European Studies
+                p.contacts-text Universitetskaya Nab., 7/9 (Mendeleev-Centre)
+                p.contacts-text 199034, St. Petersburg, Russia
+                p.contacts-text 199034, St. Petersburg, Russia
+                p.contacts-text <span>Tel./Fax:</span> +7 812 324 08 85
+                p.contacts-text <span>E-mail:</span> netglow@spbu.ru
+                .contacts-img-wrp
+                    img(data-original='img/org-logo.png' alt='Centre for German and European Studies' title='Centre for German and European Studies').contacts-img.lazyload
+
+        include includes/_footer
+
+        //include includes/_outdate-browers
