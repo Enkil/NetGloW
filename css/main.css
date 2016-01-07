@@ -1234,21 +1234,21 @@ The `sprites` mixin generates identical output to the CSS template
     vertical-align : middle; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -19px;
+    background-position : -121px -38px;
 }
 .speaker__btn:hover:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px 0;
+    background-position : -121px -19px;
 }
 .speaker__btn:active:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -67px -73px;
+    background-position : -121px 0;
 }
 
 .speaker-block {
@@ -1357,35 +1357,38 @@ The `sprites` mixin generates identical output to the CSS template
 }
 .speaker-block__icon--doc {
     width : 19px;
-    width : 19px;
-    height : 21px;
     height : 21px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -37px;
+    background-position : -98px -59px;
 }
 .speaker-block__icon--doc:hover {
     width : 19px;
     height : 21px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -59px;
+    background-position : -98px -81px;
 }
 .speaker-block__icon--doc:active {
     width : 19px;
     height : 21px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -81px;
+    background-position : -98px -37px;
 }
 .speaker-block__icon--camera {
-    width : 25px;
-    width : 25px;
-    height : 21px;
-    height : 21px; 
+    width : 20px;
+    height : 17px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -71px -49px;
+    background-position : -72px -73px;
+}
+.speaker-block__icon--camera:hover {
+    width : 20px;
+    height : 17px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -51px -73px;
 }
 
 .programm {
@@ -1619,7 +1622,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 9px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -51px;
+    background-position : -87px -49px;
 }
 .footer__link {
     font-weight : 300;
@@ -1657,7 +1660,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 23px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -31px -73px;
+    background-position : -71px -49px;
 }
 .footer__contacts--phone:before {
     top : 7px; 
@@ -1666,7 +1669,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 18px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -47px -73px;
+    background-position : -31px -73px;
 }
 .footer__contacts--mail:before {
     top : 12px; 
@@ -1675,7 +1678,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 12px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -38px;
+    background-position : -121px -91px;
 }
 
 .icon {
@@ -1839,4 +1842,126 @@ The `sprites` mixin generates identical output to the CSS template
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
+}
+
+.archive {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-wrap : wrap;
+            flex-wrap : wrap;
+    width : 33.3%;
+    min-width : 300px; 
+    margin-bottom : 100px;
+    padding : 0;
+
+    list-style : none;
+
+        -ms-flex-wrap : wrap;
+}
+.archive__item {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-wrap : wrap;
+            flex-wrap : wrap; 
+    -webkit-justify-content : flex-start;
+            justify-content : flex-start;
+    -webkit-align-items : center;
+            align-items : center;
+    width : 100%;
+    margin-bottom : 60px;
+
+    -webkit-box-align : center;
+    -webkit-box-pack : start;
+    -ms-flex-align : center;
+    -ms-flex-pack : start;
+        -ms-flex-wrap : wrap;
+}
+.archive__img {
+    width : 40px;
+    height : 40px;
+    margin-right : 20px; 
+
+    -o-object-fit : contain;
+       object-fit : contain;
+}
+.archive__title {
+    margin : 0;
+    margin-right : 15px; 
+
+    font-weight : 700;
+    font-size : 16px;
+    line-height : 36px;
+    color : #036;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.archive__link {
+    display : inline-block;
+    width : 18px;
+    width : 18px;
+    height : 18px;
+    height : 18px;
+    margin-right : 55px; 
+    margin-left : 20px;
+
+    vertical-align : middle;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -121px -38px;
+}
+.archive__link:hover {
+    width : 18px;
+    height : 18px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -121px -19px;
+}
+.archive__link:active {
+    width : 18px;
+    height : 18px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -121px 0;
+}
+.archive__icon {
+    display : inline-block;
+    margin-right : 15px; 
+
+    background-repeat : no-repeat;
+    cursor : pointer;
+}
+.archive__icon:last-child {
+    margin-right : 0;
+}
+.archive__icon--photo {
+    width : 17px;
+    height : 16px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -121px -74px;
+}
+.archive__icon--photo:hover {
+    width : 17px;
+    height : 16px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -121px -57px;
+}
+.archive__icon--camera {
+    width : 20px;
+    height : 17px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -72px -73px;
+}
+.archive__icon--camera:hover {
+    width : 20px;
+    height : 17px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -51px -73px;
 }
