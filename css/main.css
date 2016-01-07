@@ -1880,13 +1880,20 @@ The `sprites` mixin generates identical output to the CSS template
     -ms-flex-pack : start;
         -ms-flex-wrap : wrap;
 }
-.archive__img {
+.archive__logo {
     width : 40px;
     height : 40px;
-    margin-right : 20px; 
+    margin-right : 20px;
 
-    -o-object-fit : contain;
-       object-fit : contain;
+    background-image : url(../img/netglow-14.png);
+    background-repeat : no-repeat;
+    background-size : contain; 
+
+    -webkit-transition : all .5s linear;
+            transition : all .5s linear;
+}
+.archive__logo:hover {
+    background-image : url(../img/netglow-14_hover.png);
 }
 .archive__title {
     margin : 0;
