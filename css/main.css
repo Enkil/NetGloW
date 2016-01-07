@@ -2009,3 +2009,23 @@ The `sprites` mixin generates identical output to the CSS template
     background-image : url(../img/sprite/png-sprite.png);
     background-position : -121px -57px;
 }
+
+.practical-info-map {
+    width : 100%;
+    height : auto;
+    margin-bottom : 40px; 
+
+    -o-object-fit : contain;
+       object-fit : contain;
+}
+
+.practical-info-text {
+    margin-bottom : 40px; 
+
+    font-weight : 500;
+    font-size : 15px;
+    line-height : 30px;
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
