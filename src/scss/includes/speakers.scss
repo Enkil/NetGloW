@@ -80,14 +80,14 @@
     &:after{
       content: '';
       display: inline-block;
-      @include sprite($sprite-speakers-btn-arrow);
+      @include sprite($sprite-btn-arrow);
       width: 18px;
       height: 18px;
       margin-left: 20px;
       vertical-align: middle;
     }
-    &:hover:after{  @include sprite($sprite-speakers-btn-arrow-hover);  }
-    &:active:after{  @include sprite($sprite-speakers-btn-arrow-active);  }
+    &:hover:after{  @include sprite($sprite-btn-arrow-hover);  }
+    &:active:after{  @include sprite($sprite-btn-arrow-active);  }
   }
 }
 
@@ -158,16 +158,16 @@
 
     &--doc{
       @include sprite($sprite-doc-icon-norm);
-      width: 19px;
-      height: 21px;
+      //width: 19px;
+      //height: 21px;
       &:hover{@include sprite($sprite-doc-icon-hover);}
       &:active{@include sprite($sprite-doc-icon-click);}
     }
     &--camera{
       @include sprite($sprite-video-icon-norm);
-      width: 25px;
-      height: 21px;
-      //&:hover{@include sprite($sprite-video-icon-hover);}
+      //width: 25px;
+      //height: 21px;
+      &:hover{@include sprite($sprite-video-icon-hover);}
       //&:active{@include sprite($sprite-video-icon-click);}
     }
   }

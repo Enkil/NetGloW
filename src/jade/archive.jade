@@ -1,0 +1,28 @@
+doctype
+html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
+
+    include includes/_head
+
+    body
+
+        include includes/_header
+
+        // Main
+        main
+
+            .container.container--column
+                h2.h2-title.margin-top Archive
+
+            .container.container--hor-center
+                ul.archive
+                    - for (i=0; i<4; i++)
+                        li.archive__item
+                            .archive__logo
+                            h3.archive__title NetGlow'14
+                            a(href='media.html' title='NetGlow14').archive__link
+                            a(href='media.html' title='NetGlow14').archive__icon.archive__icon--photo
+                            a(href='media.html' title='NetGlow14').archive__icon.archive__icon--camera
+
+        include includes/_footer
+
+        //include includes/_outdate-browers

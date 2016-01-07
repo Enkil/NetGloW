@@ -1,0 +1,70 @@
+.archive{
+  width: 33.3%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  list-style: none;
+  padding: 0;
+  min-width: 300px;
+
+  &__item{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  &__logo{
+    @include transition();
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../img/netglow-14.png);
+    background-size: contain;
+    &:hover{  background-image: url(../img/netglow-14_hover.png);} }
+  &__title{
+    font-size: 16px;
+    line-height: 36px;
+    font-family:"Ek Mukta", sans-serif;
+    font-weight: 700;
+    color: $color-main-dark;
+    margin: 0;
+    margin-right: 15px;
+  }
+  &__link{
+    @include sprite($sprite-btn-arrow);
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    vertical-align: middle;
+    margin-right: 55px;
+    &:hover{  @include sprite($sprite-btn-arrow-hover);  }
+    &:active{  @include sprite($sprite-btn-arrow-active);  }
+  }
+  &__icon{
+    display: inline-block;
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 15px;
+    &:last-child{  margin-right: 0;  }
+
+    &--photo{
+      @include sprite($sprite-photo-icon-norm);
+      //width: 17px;
+      //height: 16px;
+      &:hover{@include sprite($sprite-photo-icon-hover);}
+      //&:active{@include sprite($sprite-video-icon-click);}
+    }
+    &--camera{
+      @include sprite($sprite-video-icon-norm);
+      //width: 25px;
+      //height: 21px;
+      &:hover{@include sprite($sprite-video-icon-hover);}
+      //&:active{@include sprite($sprite-video-icon-click);}
+    }
+  }
+}
