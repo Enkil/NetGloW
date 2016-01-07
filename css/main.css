@@ -1234,14 +1234,14 @@ The `sprites` mixin generates identical output to the CSS template
     vertical-align : middle; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -38px;
+    background-position : -121px -19px;
 }
 .speaker__btn:hover:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -19px;
+    background-position : -121px -38px;
 }
 .speaker__btn:active:after {
     width : 18px;
@@ -1678,7 +1678,7 @@ The `sprites` mixin generates identical output to the CSS template
     height : 12px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -91px;
+    background-position : -121px -92px;
 }
 
 .icon {
@@ -1921,14 +1921,14 @@ The `sprites` mixin generates identical output to the CSS template
     vertical-align : middle;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -38px;
+    background-position : -121px -19px;
 }
 .archive__link:hover {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -19px;
+    background-position : -121px -38px;
 }
 .archive__link:active {
     width : 18px;
@@ -1952,14 +1952,14 @@ The `sprites` mixin generates identical output to the CSS template
     height : 16px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -74px;
+    background-position : 0 -107px;
 }
 .archive__icon--photo:hover {
     width : 17px;
     height : 16px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -57px;
+    background-position : -121px -75px;
 }
 .archive__icon--camera {
     width : 20px;
@@ -1974,4 +1974,38 @@ The `sprites` mixin generates identical output to the CSS template
 
     background-image : url(../img/sprite/png-sprite.png);
     background-position : -51px -73px;
+}
+
+.registration-text {
+    margin-top : 0;
+    margin-bottom : 0; 
+
+    font-weight : 500;
+    font-size : 15px;
+    line-height : 30px;
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.registration-text > span {
+    color : #f90;
+}
+.registration-text--fees {
+    margin-top : 0;
+    margin-bottom : 30px;
+}
+.registration-text--payment-details {
+    margin-bottom : 130px;
+}
+
+.euro {
+    display : inline-block;
+    width : 17px;
+    height : 17px;
+    margin : 0 5px; 
+
+    vertical-align : sub;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -121px -57px;
 }
