@@ -1721,3 +1721,15 @@ The `sprites` mixin generates identical output to the CSS template
 
     font-family : "Open Sans";
 }
+
+.about-text {
+    width : 100%;
+    margin-top : 30px;
+
+    font-weight : 500;
+    font-size : 15px;
+    line-height : 30px;
+    color : #069; 
+
+    font-family : "Ek Mukta", sans-serif;
+}
