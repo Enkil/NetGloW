@@ -1825,6 +1825,9 @@ The `sprites` mixin generates identical output to the CSS template
 
     background-color : #f90;
 }
+.keydates__item:last-child:after {
+    display : none;
+}
 .keydates__date {
     font-weight : 700; 
     font-size : 16px;
