@@ -1,0 +1,24 @@
+.registration-text{
+  font-family:"Ek Mukta", sans-serif;
+  font-weight: 500;
+  color: $color-main-light;
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  > span{  color: $color-orange;}
+  &--fees{
+    //color: $color-main-dark;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  &--payment-details{margin-bottom: 130px;}
+}
+
+.euro{
+  @include sprite($sprite-euro);
+  display: inline-block;
+  vertical-align: sub;
+  margin: 0 5px;
+}
