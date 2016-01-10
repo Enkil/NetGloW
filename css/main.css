@@ -1655,7 +1655,8 @@ p {
 .footer__contacts {
     position : relative;
 
-    margin : 0; 
+    display : block; 
+    margin : 0;
     padding-left : 15px;
 
     font-weight : 300;
