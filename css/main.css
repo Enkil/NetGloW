@@ -590,6 +590,18 @@ The `sprites` mixin generates identical output to the CSS template
     color : #069;
 }
 
+p {
+    margin-top : 0; 
+    margin-bottom : 40px;
+
+    font-weight : 500;
+    font-size : 15px;
+    line-height : 30px;
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+
 .header {
     box-shadow : inset 0 9px 6px rgba(0, 0, 0, .04);
 }
@@ -877,11 +889,18 @@ The `sprites` mixin generates identical output to the CSS template
     -ms-flex-line-pack : center;
     -ms-flex-pack : center;
 }
+.container--block {
+    display : block;
+}
 @media (min-width: 20em) and (max-width: 74.99em) {
     .container {
         width : 100%;
         padding : 0 10px;
     }
+}
+
+.pull-left {
+    float : left;
 }
 
 .triangle-arrow {
@@ -1634,8 +1653,9 @@ The `sprites` mixin generates identical output to the CSS template
     font-family : "Ek Mukta", sans-serif;
 }
 .footer__contacts {
-    position : relative; 
+    position : relative;
 
+    margin : 0; 
     padding-left : 15px;
 
     font-weight : 300;
@@ -2028,4 +2048,26 @@ The `sprites` mixin generates identical output to the CSS template
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
+}
+
+.venue-img {
+    width : 100%;
+    max-width : 100%;
+    height : auto;
+    margin-bottom : 40px; 
+
+    -o-object-fit : contain;
+       object-fit : contain;
+}
+.venue-img--options {
+    float : left;
+    width : 45%;
+    max-width : 100%; 
+    margin-right : 30px;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .venue-img--options {
+        width : 100%;
+        margin : 10px 0;
+    }
 }
