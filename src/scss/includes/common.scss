@@ -17,11 +17,18 @@
     align-content: center;
     justify-content: center;
   }
+  &--block{
+    display: block;
+  }
 
   @include mq($from: mobile, $until: wide) {
     width: 100%;
     padding: 0 10px;
   }
+}
+
+.pull-left{
+  float: left;
 }
 
 .triangle-arrow{
