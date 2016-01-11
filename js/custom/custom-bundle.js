@@ -100,6 +100,16 @@ window.onload = function(){
         }
         event.preventDefault(); // stop form from redirecting to java servlet page
     });
+
+    $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 1000);
+        return false;
+    });
+
+
+    //upBtn.scrollToTop();
 };
 
 
@@ -137,3 +147,37 @@ function findMapAndInit(mapID) {
 }
 
 //google.maps.event.addDomListener(window, "load", findMapAndInit(mapID));
+
+
+
+var upBtn = (function() {
+
+    // declare private variables and/or functions
+
+    var html = document.documentElement;
+    var body = document.body;
+    var upBtnSelector = document.querySelector('.up-btn');
+
+    var scrollTop = html.scrollTop || body && body.scrollTop || 0;
+    scrollTop -= html.clientTop; // в IE7- <html> смещён относительно (0,0)
+
+    var timerId = setTimeout(function scrollCheck() {
+        if (scrollTop > 600) {
+            upBtnSelector.classList.add('up-btn--isVisible');
+        }
+        timerId = setTimeout(scrollCheck, 200);
+    }, 200);
+
+    return {
+        // declare public variables and/or functions
+        scrollToTop: setTimeout(function scrollCheck() {
+            if (scrollTop > 600) {
+                upBtnSelector.classList.add('up-btn--isVisible');
+            }
+            timerId = setTimeout(scrollCheck, 200);
+        }, 200)
+
+    };
+
+})();
+

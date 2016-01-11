@@ -974,6 +974,26 @@ p {
     margin-bottom : 70px;
 }
 
+.up-btn {
+    position : fixed;
+    right : 50px;
+    bottom : 200px;
+    z-index : 50; 
+
+    width : 52px;
+    height : 52px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 0;
+    opacity : 1;
+
+    -webkit-transition : all .5s linear;
+            transition : all .5s linear;
+}
+.up-btn--isVisible {
+    opacity : 1;
+}
+
 .top-slider {
     position : relative;
 
@@ -1056,7 +1076,7 @@ p {
     margin : 0 auto;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -31px -49px;
+    background-position : -49px -53px;
 }
 .top-slider .slick-dots {
     position : absolute;
@@ -1167,7 +1187,7 @@ p {
 
     background-color : transparent;
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px 0;
+    background-position : -102px -58px;
     border : none;
     outline : none;
     cursor : pointer;
@@ -1252,21 +1272,21 @@ p {
     vertical-align : middle; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -19px;
+    background-position : -19px -124px;
 }
 .speaker__btn:hover:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -38px;
+    background-position : -38px -124px;
 }
 .speaker__btn:active:after {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px 0;
+    background-position : 0 -124px;
 }
 
 .speaker-block {
@@ -1378,35 +1398,35 @@ p {
     height : 21px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -59px;
+    background-position : 0 -102px;
 }
 .speaker-block__icon--doc:hover {
     width : 19px;
     height : 21px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -81px;
+    background-position : -69px -77px;
 }
 .speaker-block__icon--doc:active {
     width : 19px;
     height : 21px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -98px -37px;
+    background-position : -49px -77px;
 }
 .speaker-block__icon--camera {
     width : 20px;
     height : 17px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -72px -73px;
+    background-position : -61px -102px;
 }
 .speaker-block__icon--camera:hover {
     width : 20px;
     height : 17px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -51px -73px;
+    background-position : -40px -102px;
 }
 
 .programm {
@@ -1461,7 +1481,7 @@ p {
 
     background-color : transparent;
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 -49px;
+    background-position : -102px 0;
     border : none;
     outline : none;
     cursor : pointer;
@@ -1640,7 +1660,7 @@ p {
     height : 9px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -87px -49px;
+    background-position : -133px -32px;
 }
 .footer__link {
     font-weight : 300;
@@ -1680,7 +1700,7 @@ p {
     height : 23px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -71px -49px;
+    background-position : -133px 0;
 }
 .footer__contacts--phone:before {
     top : 7px; 
@@ -1689,7 +1709,7 @@ p {
     height : 18px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -31px -73px;
+    background-position : -20px -102px;
 }
 .footer__contacts--mail:before {
     top : 12px; 
@@ -1698,7 +1718,7 @@ p {
     height : 12px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -92px;
+    background-position : -75px -124px;
 }
 
 .icon {
@@ -1718,14 +1738,14 @@ p {
     height : 48px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -49px 0;
+    background-position : 0 -53px;
 }
 .icon--vk {
     width : 48px;
     height : 48px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 0;
+    background-position : -53px 0;
 }
 
 .copyright {
@@ -1990,7 +2010,7 @@ p {
     height : 7px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -31px -92px;
+    background-position : -133px -24px;
 }
 .submission__textarea {
     box-sizing : border-box;
@@ -2214,21 +2234,21 @@ label.error {
     vertical-align : middle;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -19px;
+    background-position : -19px -124px;
 }
 .archive__link:hover {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -38px;
+    background-position : -38px -124px;
 }
 .archive__link:active {
     width : 18px;
     height : 18px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px 0;
+    background-position : 0 -124px;
 }
 .archive__icon {
     display : inline-block;
@@ -2245,28 +2265,28 @@ label.error {
     height : 16px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 -107px;
+    background-position : -57px -124px;
 }
 .archive__icon--photo:hover {
     width : 17px;
     height : 16px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -75px;
+    background-position : -100px -102px;
 }
 .archive__icon--camera {
     width : 20px;
     height : 17px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -72px -73px;
+    background-position : -61px -102px;
 }
 .archive__icon--camera:hover {
     width : 20px;
     height : 17px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -51px -73px;
+    background-position : -40px -102px;
 }
 
 .registration-text {
@@ -2300,7 +2320,7 @@ label.error {
     vertical-align : sub;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -121px -57px;
+    background-position : -82px -102px;
 }
 
 .practical-info-map {
