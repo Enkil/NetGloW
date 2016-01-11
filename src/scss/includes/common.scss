@@ -97,4 +97,7 @@
   &--isVisible{
     opacity: 1;
   }
+  @include mq($from: mobile, $until: tablet) {
+    display: none;
+  }
 }
