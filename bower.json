@@ -18,5 +18,7 @@
     "vanilla-lazyload": "~1.5.7",
     "slick-carousel": "slick.js#~1.5.8"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery-validation": "~1.14.0"
+  }
 }

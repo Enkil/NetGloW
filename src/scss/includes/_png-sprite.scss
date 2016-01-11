@@ -11,6 +11,17 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
+$sprite-arrow-orange-name: 'sprite__arrow-orange';
+$sprite-arrow-orange-x: 31px;
+$sprite-arrow-orange-y: 92px;
+$sprite-arrow-orange-offset-x: -31px;
+$sprite-arrow-orange-offset-y: -92px;
+$sprite-arrow-orange-width: 12px;
+$sprite-arrow-orange-height: 7px;
+$sprite-arrow-orange-total-width: 139px;
+$sprite-arrow-orange-total-height: 123px;
+$sprite-arrow-orange-image: '../img/sprite/png-sprite.png';
+$sprite-arrow-orange: (31px, 92px, -31px, -92px, 12px, 7px, 139px, 123px, '../img/sprite/png-sprite.png', 'sprite__arrow-orange', );
 $sprite-arrow-name: 'sprite__arrow';
 $sprite-arrow-x: 31px;
 $sprite-arrow-y: 49px;
@@ -234,7 +245,7 @@ $sprite-vk: (0px, 0px, 0px, 0px, 48px, 48px, 139px, 123px, '../img/sprite/png-sp
 $spritesheet-width: 139px;
 $spritesheet-height: 123px;
 $spritesheet-image: '../img/sprite/png-sprite.png';
-$spritesheet-sprites: ($sprite-arrow, $sprite-btn-arrow-active, $sprite-btn-arrow-hover, $sprite-btn-arrow, $sprite-doc-icon-click, $sprite-doc-icon-hover, $sprite-doc-icon-norm, $sprite-euro, $sprite-fb, $sprite-footer-arrow, $sprite-mail, $sprite-map-marker-small, $sprite-phone, $sprite-photo-icon-hover, $sprite-photo-icon-norm, $sprite-programm-arrow, $sprite-speakers-arrow, $sprite-video-icon-hover, $sprite-video-icon-norm, $sprite-vk, );
+$spritesheet-sprites: ($sprite-arrow-orange, $sprite-arrow, $sprite-btn-arrow-active, $sprite-btn-arrow-hover, $sprite-btn-arrow, $sprite-doc-icon-click, $sprite-doc-icon-hover, $sprite-doc-icon-norm, $sprite-euro, $sprite-fb, $sprite-footer-arrow, $sprite-mail, $sprite-map-marker-small, $sprite-phone, $sprite-photo-icon-hover, $sprite-photo-icon-norm, $sprite-programm-arrow, $sprite-speakers-arrow, $sprite-video-icon-hover, $sprite-video-icon-norm, $sprite-vk, );
 $spritesheet: (139px, 123px, '../img/sprite/png-sprite.png', $spritesheet-sprites, );
 
 /*

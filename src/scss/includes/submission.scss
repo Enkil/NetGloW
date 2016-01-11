@@ -1,0 +1,203 @@
+.submission{
+  width: 83.33%;
+  padding: 60px 70px;
+  border: 1px solid $color-main-dark;
+  border-radius: 10px;
+  @include box-shadow(0, 0, 7px, rgba(0,0,0,.08));
+  margin-bottom: 70px;
+  margin-top: 40px;
+
+  &__label{
+    font-family:"Ek Mukta", sans-serif;
+    font-weight: 700;
+    color: $color-main-dark;
+    font-size: 16px;
+    line-height: 45px;
+    display: block;
+    margin-top: 20px;
+    &--radio{
+      display: inline-block;
+      color: $color-main-light;
+      margin-left: 10px;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-top: 0;
+    }
+  }
+  &__subtext{
+    font-family:"Ek Mukta", sans-serif;
+    font-weight: 300;
+    color: $color-main-light;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+    &--mini{
+      font-size: 11px;
+      line-height: 11px;
+    }
+  }
+  &__radio-wrp{
+    //cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $color-main-light;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+    right: 20px;
+  }
+  &__input{
+    font-family:"Ek Mukta", sans-serif;
+    font-weight: 500;
+    color: $color-main-light;
+    font-size: 14px;
+    line-height: 25px;
+    height: 25px;
+    width: 45%;
+    border: 1px solid $color-main-dark;
+    border-radius: 10px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    outline: none;
+    @include mq($from: mobile, $until: tablet) {
+      width: 100%;
+    }
+    &::placeholder{
+      font-family:"Ek Mukta", sans-serif;
+      font-weight: 500;
+      color: $color-main-light;
+      font-size: 14px;
+      line-height: 25px;
+    }
+    &.error{
+      border: 1px dashed red;
+    }
+  }
+  &__radio{
+    position: relative;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    &:checked + .submission__radio-wrp{
+      background-color: $color-main-light;
+    }
+  }
+  &__select{
+    width: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid $color-main-dark;
+    border-radius: 10px;
+    height: 25px;
+    color: $color-main-light;
+    position: relative;
+    padding: 0 30px;
+    outline: none;
+    &.error{
+      border: 1px dashed red;
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    option{
+      font-family:"Ek Mukta", sans-serif;
+      font-weight: 500;
+      color: $color-main-light;
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+  &__select-wrp{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin-top: 10px;
+    @include mq($from: mobile, $until: tablet) {
+      width: 100%;
+    }
+    &:after{
+      content: '';
+      @include sprite($sprite-arrow-orange);
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 4px);
+    }
+  }
+  &__textarea{
+    font-family:"Ek Mukta", sans-serif;
+    font-weight: 500;
+    color: $color-main-light;
+    font-size: 14px;
+    line-height: 25px;
+    height: 200px;
+    width: 50%;
+    border: 1px solid $color-main-dark;
+    border-radius: 10px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    outline: none;
+    &.error{
+      border: 1px dashed red;
+    }
+    @include mq($from: mobile, $until: tablet) {
+      width: 100%;
+    }
+  }
+  &__btn{
+    @include transition();
+    font-family:"Ek Mukta", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    padding: 0 25px;
+    border: 1px solid $color-orange;
+    border-radius: 18px;
+    margin: 0 auto;
+    background-color: transparent;
+    margin-top: 45px;
+    &:hover{
+      background-color: $color-orange;
+    }
+  }
+}
+
+.aftersubmit{
+  width: 83.33%;
+  padding: 60px 70px;
+  border: 1px solid $color-main-dark;
+  border-radius: 10px;
+  @include box-shadow(0, 0, 7px, rgba(0,0,0,.08));
+  margin-bottom: 70px;
+  margin-top: 40px;
+  display: none;
+
+  &__text{
+    font-family:"Ek Mukta", sans-serif;
+    font-weight: 700;
+    color: $color-main-dark;
+    font-size: 16px;
+    line-height: 45px;
+    display: block;
+  }
+}
+
+label.error{
+  font-family:"Ek Mukta", sans-serif;
+  font-weight: 700;
+  color: red;
+  margin-left: 30px;
+  display: block;
+  position: absolute;
+}

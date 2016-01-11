@@ -13,9 +13,144 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
             .container.container--column
                 h2.h2-title.margin-top Abstract submission
 
-            .container
+            .container.container--hor-center
+                form(method='post' action='').submission
+                    label(for='lname').submission__label Last name *
+                    input(type='text' placeholder='Enter your last name' name='lname' required).submission__input#lname
+
+                    label(for='fname').submission__label First name *
+                    input(type='text' placeholder='Enter your first name' name='fname' required).submission__input#fname
+
+                    label(for='sname').submission__label Second name
+                    input(type='text' placeholder='Enter your second name' name='sname').submission__input#sname
+
+                    label(for='email').submission__label E-mail *
+                    input(type='email' placeholder='Enter your e-mail' name='email' required).submission__input#email
+
+                    label(for='phone').submission__label Phone Number *
+                    input(type='tel' placeholder='Enter your phone number' name='phone' required).submission__input#phone
+
+                    label(for='country').submission__label Country *
+                    input(type='text' placeholder='Enter your country' name='country' required).submission__input#country
+
+                    label(for='zipcode').submission__label Zip-code *
+                    input(type='text' placeholder='Enter your zip-code' name='zipcode' required).submission__input#zipcode
+
+                    label(for='city').submission__label City *
+                    input(type='text' placeholder='Enter your city' name='city' required).submission__input#city
+
+                    label(for='addr1').submission__label Address line 1 *
+                    input(type='text' placeholder='Enter your address line 1' name='addr1' required).submission__input#addr1
+
+                    label(for='addr2').submission__label Address line 2
+                    input(type='text' placeholder='Enter your address line 1' name='addr2').submission__input#addr2
+
+                    label(for='organisation').submission__label Organisation *
+                    input(type='text' placeholder='Enter your organisation' name='organisation' required).submission__input#organisation
+
+                    label(for='position').submission__label Position *
+                    input(type='text' placeholder='Enter your position' name='position' required).submission__input#position
+
+                    span.submission__label Do you need visa support for your travel to Russia? *
+                    div
+                        input(type='radio' name='visa' value='Yes').submission__radio#visa-yes
+                        span.submission__radio-wrp
+                        label(for='visa-yes').submission__label.submission__label--radio Yes
+                    div
+                        input(type='radio' name='visa' value='No').submission__radio#visa-no
+                        span.submission__radio-wrp
+                        label(for='visa-no').submission__label.submission__label--radio No
+
+                    span.submission__label Do you need an official letter of invitation? *
+                    div
+                        input(type='radio' name='invite' value='Yes').submission__radio#invite-yes
+                        span.submission__radio-wrp
+                        label(for='invite-yes').submission__label.submission__label--radio Yes
+                    div
+                        input(type='radio' name='invite' value='No').submission__radio#invite-no
+                        span.submission__radio-wrp
+                        label(for='invite-no').submission__label.submission__label--radio No
+
+                    span.submission__label Hotel reservation *
+                    span.submission__subtext.
+                        Automatically upon registration. <br>
+                        Payment is due upon arrival. <br>
+                    .submission__select-wrp
+                        select.submission__select.required
+                            option
+                            option(value='Hotel 1') Hotel 1
+                            option(value='Hotel 2') Hotel 2
+                            option(value='Hotel 3') Hotel 3
+                            option(value='Hotel 4') Hotel 4
+                            option(value='Hotel 5') Hotel 5
+
+                    span.submission__label Would you like to apply for the hostel accommodation provided by the organizers for students who submit the most promising abstracts? *
+                        div
+                            input(type='radio' name='hostel' value='Yes' aria-required="true").submission__radio#hostel-yes
+                            span.submission__radio-wrp
+                            label(for='hostel-yes').submission__label.submission__label--radio Yes
+                        div
+                            input(type='radio' name='hostel' value='No' aria-required="true").submission__radio#hostel-no
+                            span.submission__radio-wrp
+                            label(for='hostel-no').submission__label.submission__label--radio No
+
+                    span.submission__label Would you like to attend conference reception? *
+                    span.submission__subtext Fee of 30 EUR applies.
+                        div
+                            input(type='radio' name='hostel' value='Yes').submission__radio#hostel-yes
+                            span.submission__radio-wrp
+                            label(for='hostel-yes').submission__label.submission__label--radio Yes
+                        div
+                            input(type='radio' name='hostel' value='No').submission__radio#hostel-no
+                            span.submission__radio-wrp
+                            label(for='hostel-no').submission__label.submission__label--radio No
+
+                    span.submission__label Session *
+                    span.submission__subtext.
+                        Information on the sessions is available here.
+                    .submission__select-wrp
+                        select.submission__select.required
+                            option
+                            option(value='Session 1') Session 1
+                            option(value='Session 2') Session 2
+                            option(value='Session 3') Session 3
+                            option(value='Session 4') Session 4
+                            option(value='Session 5') Session 5
+
+                    label(for='papertitle').submission__label Paper title *
+                    span.submission__subtext.
+                        To participate without a presentation please put "WITHOUT A PRESENTATION" in the field below.
+                    input(type='text' placeholder='' name='papertitle' required).submission__input#papertitle
+
+                    label(for='abstract').submission__label Abstract * (200 words)
+                    span.submission__subtext.
+                        To participate without a presentation please put "WITHOUT A PRESENTATION" in the field below.
+                    textarea(name='abstract' required).submission__textarea#abstract
+                    span.submission__subtext.submission__subtext--mini 0/200 words
+
+                    label(for='co-authors').submission__label Co-author(s)
+                    input(type='text' placeholder='' name='co-authors' required).submission__input#co-authors
+
+                    span.submission__label Software workshop *
+                    span.submission__subtext.
+                        Information on workshops is available here.
+                    .submission__select-wrp
+                        select.submission__select.required
+                                option
+                                option(value='Workshop 1') Workshop 1
+                                option(value='Workshop 2') Workshop 2
+                                option(value='Workshop 3') Workshop 3
+                                option(value='Workshop 4') Workshop 4
+                                option(value='Workshop 5') Workshop 5
+
+                    button.submission__btn Submit
 
 
+
+             .container
+                 .aftersubmit
+                     p.aftersubmit__text.
+                        Thank you for submiting form.
         include includes/_footer
 
         //include includes/_outdate-browers
