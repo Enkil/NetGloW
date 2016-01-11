@@ -993,6 +993,11 @@ p {
 .up-btn--isVisible {
     opacity : 1;
 }
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .up-btn {
+        display : none;
+    }
+}
 
 .top-slider {
     position : relative;
