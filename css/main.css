@@ -851,10 +851,9 @@ p {
     display :         flex;
     -webkit-flex-wrap : wrap;
             flex-wrap : wrap;
-    box-sizing : border-box;
+    box-sizing : border-box; 
     width : 100%;
     min-width : 320px;
-    min-width : 320px; 
     max-width : 1200px;
     margin : 0 auto;
 
@@ -1804,6 +1803,279 @@ p {
 
     -o-object-fit : contain;
        object-fit : contain;
+}
+
+.submission {
+    width : 83.33%;
+    margin-top : 40px; 
+    margin-bottom : 70px;
+    padding : 60px 70px;
+
+    border : 1px solid #036;
+    border-radius : 10px;
+    box-shadow : 0 0 7px rgba(0, 0, 0, .08);
+}
+.submission__label {
+    display : block;
+    margin-top : 20px; 
+
+    font-weight : 700;
+    font-size : 16px;
+    line-height : 45px;
+    color : #036;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__label--radio {
+    position : relative;
+
+    display : inline-block;
+    margin-top : 0; 
+    margin-left : 10px;
+
+    vertical-align : middle;
+    color : #069;
+
+    cursor : pointer;
+}
+.submission__subtext {
+    display : block;
+    margin-bottom : 10px; 
+
+    font-weight : 300;
+    font-size : 16px;
+    line-height : 24px;
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__subtext--mini {
+    font-size : 11px;
+    line-height : 11px;
+}
+.submission__radio-wrp {
+    position : relative;
+    right : 20px; 
+
+    display : inline-block;
+    box-sizing : border-box;
+    width : 20px;
+    height : 20px;
+
+    vertical-align : middle;
+
+    border : 1px solid #069;
+    border-radius : 50%;
+}
+.submission__input {
+    box-sizing : border-box;
+    width : 45%;
+    height : 25px;
+    padding : 0 30px;
+
+    font-weight : 500;
+    font-size : 14px;
+    line-height : 25px;
+    color : #069;
+
+    border : 1px solid #036;
+    border-radius : 10px;
+    outline : none; 
+
+    font-family : "Ek Mukta", sans-serif;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .submission__input {
+        width : 100%;
+    }
+}
+.submission__input::-webkit-input-placeholder {
+    font-weight : 500;
+    font-size : 14px;
+    line-height : 25px; 
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__input::-moz-placeholder {
+    font-weight : 500;
+    font-size : 14px;
+    line-height : 25px; 
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__input:-ms-input-placeholder {
+    font-weight : 500;
+    font-size : 14px;
+    line-height : 25px; 
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__input::placeholder {
+    font-weight : 500;
+    font-size : 14px;
+    line-height : 25px; 
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__input.error {
+    border : 1px dashed red;
+}
+.submission__radio {
+    position : relative;
+
+    width : 20px;
+    height : 20px;
+
+    cursor : pointer; 
+    opacity : 0;
+}
+.submission__radio:checked + .submission__radio-wrp {
+    background-color : #069;
+}
+.submission__select {
+    position : relative;
+
+    width : 100%;
+    height : 25px;
+    padding : 0 30px;
+
+    color : #069;
+
+    background-color : transparent;
+    border : 1px solid #036;
+    border-radius : 10px;
+    outline : none; 
+
+    -webkit-appearance : none;
+       -moz-appearance : none;
+            appearance : none;
+}
+.submission__select.error {
+    border : 1px dashed red;
+}
+.submission__select::-ms-expand {
+    display : none;
+}
+.submission__select option {
+    font-weight : 500;
+    font-size : 14px;
+    line-height : 25px; 
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__select-wrp {
+    position : relative;
+
+    display : inline-block;
+    width : 50%;
+    margin-top : 10px;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .submission__select-wrp {
+        width : 100%;
+    }
+}
+.submission__select-wrp:after {
+    content : "";
+    position : absolute;
+    top : calc(50% - 4px); 
+    right : 10px;
+
+    width : 12px;
+    height : 7px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -31px -92px;
+}
+.submission__textarea {
+    box-sizing : border-box;
+    width : 50%;
+    height : 200px;
+    margin-bottom : 15px;
+    padding : 0 30px;
+
+    font-weight : 500;
+    font-size : 14px;
+    line-height : 25px;
+    color : #069;
+
+    border : 1px solid #036;
+    border-radius : 10px;
+    outline : none; 
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__textarea.error {
+    border : 1px dashed red;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .submission__textarea {
+        width : 100%;
+    }
+}
+.submission__btn {
+    display : block;
+    box-sizing : border-box;
+    height : 40px;
+    margin : 0 auto;
+    margin-top : 45px; 
+    padding : 0 25px;
+
+    font-weight : 700;
+    font-size : 16px;
+    line-height : 40px;
+    text-transform : uppercase;
+
+    background-color : transparent;
+    border : 1px solid #f90;
+    border-radius : 18px;
+
+    -webkit-transition : all .5s linear;
+            transition : all .5s linear;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+.submission__btn:hover {
+    background-color : #f90;
+}
+
+.aftersubmit {
+    display : none; 
+    width : 83.33%;
+    margin-top : 40px;
+    margin-bottom : 70px;
+    padding : 60px 70px;
+
+    border : 1px solid #036;
+    border-radius : 10px;
+    box-shadow : 0 0 7px rgba(0, 0, 0, .08);
+}
+.aftersubmit__text {
+    display : block; 
+
+    font-weight : 700;
+    font-size : 16px;
+    line-height : 45px;
+    color : #036;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+
+label.error {
+    position : absolute; 
+
+    display : block;
+    margin-left : 30px;
+
+    font-weight : 700;
+    color : red;
+
+    font-family : "Ek Mukta", sans-serif;
 }
 
 .keydates {

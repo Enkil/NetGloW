@@ -140,7 +140,112 @@
     <main>
       <div class="container container--column">
         <h2 class="h2-title margin-top">Abstract submission</h2> </div>
-      <div class="container"></div>
+      <div class="container container--hor-center">
+        <form method="post" action="" class="submission">
+          <label for="lname" class="submission__label">Last name *</label>
+          <input type="text" placeholder="Enter your last name" name="lname" required id="lname" class="submission__input">
+          <label for="fname" class="submission__label">First name *</label>
+          <input type="text" placeholder="Enter your first name" name="fname" required id="fname" class="submission__input">
+          <label for="sname" class="submission__label">Second name</label>
+          <input type="text" placeholder="Enter your second name" name="sname" id="sname" class="submission__input">
+          <label for="email" class="submission__label">E-mail *</label>
+          <input type="email" placeholder="Enter your e-mail" name="email" required id="email" class="submission__input">
+          <label for="phone" class="submission__label">Phone Number *</label>
+          <input type="tel" placeholder="Enter your phone number" name="phone" required id="phone" class="submission__input">
+          <label for="country" class="submission__label">Country *</label>
+          <input type="text" placeholder="Enter your country" name="country" required id="country" class="submission__input">
+          <label for="zipcode" class="submission__label">Zip-code *</label>
+          <input type="text" placeholder="Enter your zip-code" name="zipcode" required id="zipcode" class="submission__input">
+          <label for="city" class="submission__label">City *</label>
+          <input type="text" placeholder="Enter your city" name="city" required id="city" class="submission__input">
+          <label for="addr1" class="submission__label">Address line 1 *</label>
+          <input type="text" placeholder="Enter your address line 1" name="addr1" required id="addr1" class="submission__input">
+          <label for="addr2" class="submission__label">Address line 2</label>
+          <input type="text" placeholder="Enter your address line 1" name="addr2" id="addr2" class="submission__input">
+          <label for="organisation" class="submission__label">Organisation *</label>
+          <input type="text" placeholder="Enter your organisation" name="organisation" required id="organisation" class="submission__input">
+          <label for="position" class="submission__label">Position *</label>
+          <input type="text" placeholder="Enter your position" name="position" required id="position" class="submission__input"><span class="submission__label">Do you need visa support for your travel to Russia? *</span>
+          <div>
+            <input type="radio" name="visa" value="Yes" id="visa-yes" class="submission__radio"><span class="submission__radio-wrp"></span>
+            <label for="visa-yes" class="submission__label submission__label--radio">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="visa" value="No" id="visa-no" class="submission__radio"><span class="submission__radio-wrp"></span>
+            <label for="visa-no" class="submission__label submission__label--radio">No</label>
+          </div><span class="submission__label">Do you need an official letter of invitation? *</span>
+          <div>
+            <input type="radio" name="invite" value="Yes" id="invite-yes" class="submission__radio"><span class="submission__radio-wrp"></span>
+            <label for="invite-yes" class="submission__label submission__label--radio">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="invite" value="No" id="invite-no" class="submission__radio"><span class="submission__radio-wrp"></span>
+            <label for="invite-no" class="submission__label submission__label--radio">No</label>
+          </div><span class="submission__label">Hotel reservation *</span><span class="submission__subtext">
+            Automatically upon registration. <br>
+            Payment is due upon arrival. <br></span>
+          <div class="submission__select-wrp">
+            <select class="submission__select required">
+              <option></option>
+              <option value="Hotel 1">Hotel 1</option>
+              <option value="Hotel 2">Hotel 2</option>
+              <option value="Hotel 3">Hotel 3</option>
+              <option value="Hotel 4">Hotel 4</option>
+              <option value="Hotel 5">Hotel 5</option>
+            </select>
+          </div><span class="submission__label">Would you like to apply for the hostel accommodation provided by the organizers for students who submit the most promising abstracts? *
+            <div>
+              <input type="radio" name="hostel" value="Yes" aria-required="true" id="hostel-yes" class="submission__radio"><span class="submission__radio-wrp"></span>
+          <label for="hostel-yes" class="submission__label submission__label--radio">Yes</label>
+      </div>
+      <div>
+        <input type="radio" name="hostel" value="No" aria-required="true" id="hostel-no" class="submission__radio"><span class="submission__radio-wrp"></span>
+        <label for="hostel-no" class="submission__label submission__label--radio">No</label>
+      </div>
+      </span><span class="submission__label">Would you like to attend conference reception? *</span><span class="submission__subtext">Fee of 30 EUR applies.
+            <div>
+              <input type="radio" name="hostel" value="Yes" id="hostel-yes" class="submission__radio"><span class="submission__radio-wrp"></span>
+      <label for="hostel-yes" class="submission__label submission__label--radio">Yes</label>
+      </div>
+      <div>
+        <input type="radio" name="hostel" value="No" id="hostel-no" class="submission__radio"><span class="submission__radio-wrp"></span>
+        <label for="hostel-no" class="submission__label submission__label--radio">No</label>
+      </div>
+      </span><span class="submission__label">Session *</span><span class="submission__subtext">Information on the sessions is available here.</span>
+      <div class="submission__select-wrp">
+        <select class="submission__select required">
+          <option></option>
+          <option value="Session 1">Session 1</option>
+          <option value="Session 2">Session 2</option>
+          <option value="Session 3">Session 3</option>
+          <option value="Session 4">Session 4</option>
+          <option value="Session 5">Session 5</option>
+        </select>
+      </div>
+      <label for="papertitle" class="submission__label">Paper title *</label><span class="submission__subtext">To participate without a presentation please put "WITHOUT A PRESENTATION" in the field below.</span>
+      <input type="text" placeholder="" name="papertitle" required id="papertitle" class="submission__input">
+      <label for="abstract" class="submission__label">Abstract * (200 words)</label><span class="submission__subtext">To participate without a presentation please put "WITHOUT A PRESENTATION" in the field below.</span>
+      <textarea name="abstract" required id="abstract" class="submission__textarea"></textarea><span class="submission__subtext submission__subtext--mini">0/200 words</span>
+      <label for="co-authors" class="submission__label">Co-author(s)</label>
+      <input type="text" placeholder="" name="co-authors" required id="co-authors" class="submission__input"><span class="submission__label">Software workshop *</span><span class="submission__subtext">Information on workshops is available here.</span>
+      <div class="submission__select-wrp">
+        <select class="submission__select required">
+          <option></option>
+          <option value="Workshop 1">Workshop 1</option>
+          <option value="Workshop 2">Workshop 2</option>
+          <option value="Workshop 3">Workshop 3</option>
+          <option value="Workshop 4">Workshop 4</option>
+          <option value="Workshop 5">Workshop 5</option>
+        </select>
+      </div>
+      <button class="submission__btn">Submit</button>
+      </form>
+      </div>
+      <div class="container">
+        <div class="aftersubmit">
+          <p class="aftersubmit__text">Thank you for submiting form.</p>
+        </div>
+      </div>
     </main>
     <!-- Footer-->
     <footer class="footer">
