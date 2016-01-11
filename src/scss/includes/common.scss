@@ -85,3 +85,16 @@
 .h3-title.margin-bottom{
   margin-bottom: 70px;
 }
+
+.up-btn{
+  @include sprite($sprite-up-btn);
+  position: fixed;
+  right: 50px;
+  bottom: 200px;
+  opacity: 1;
+  @include transition();
+  z-index: 50;
+  &--isVisible{
+    opacity: 1;
+  }
+}

@@ -100,5 +100,15 @@ window.onload = function(){
         }
         event.preventDefault(); // stop form from redirecting to java servlet page
     });
+
+    $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 1000);
+        return false;
+    });
+
+
+    //upBtn.scrollToTop();
 };
 
