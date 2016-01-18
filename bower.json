@@ -19,6 +19,7 @@
     "slick-carousel": "slick.js#~1.5.8"
   },
   "dependencies": {
-    "jquery-validation": "~1.14.0"
+    "jquery-validation": "~1.14.0",
+    "Swiper": "swiper#~3.3.0"
   }
 }

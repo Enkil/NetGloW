@@ -21,8 +21,9 @@ gulp.task('sass', function () {
             this.emit('end');
         }))
         .pipe(newer(config.pathTo.Build.Styles))
-        .pipe(sourcemaps.init())
-        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(sass.sync()
+            .on('error', sass.logError))
         .pipe(autoprefixer(config.autoprefixerBrowsers))
         //.pipe(cssshrink())
         .pipe(csscomb())
