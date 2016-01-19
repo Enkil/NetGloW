@@ -5,6 +5,32 @@ section.programm
         h2.h2-title.h2-title--white Programme
     .container
         .programm__slider.js-programm-slider
-            - for (var i=0; i<6; i++ )
-                +programm-day
-
+            //- for (var i=0; i<6; i++ )
+            //    +programm-day
+            article.programm__day
+                time(datetime="2016-07-01").programm__date SESSEIONS
+                ul.programm__list
+                    li.programm__item 1. Network analysis of cultural and social duality
+                    li.programm__item 2. Words and Networks
+                    li.programm__item 3. Socio-Material Network Analysis: Relating Individuals and Physical Contexts
+                    li.programm__item 4. Making Sense of Big Network Data: Testing Hypotheses on New Data
+                    li.programm__item 5. Statistical modeling of multimodal networks
+                    li.programm__item 6. Qualitative analysis of multimodal networks
+                    li.programm__item 7. Social media networks
+                    li.programm__item 8. Urban networks
+                    li.programm__item 9. Networks in arts
+                    li.programm__item 10. Networks in Science, Technology, and Innovation
+                    li.programm__item 11. Social Movements and Collective Action as Network Phenomena
+                    li.programm__item 12. Network Analysis of Political and Policy-making Domains
+            article.programm__day
+                time(datetime="2016-07-01").programm__date SEMINARS
+                ul.programm__list
+                    li.programm__item 1. Bridging theory and method in multilevel and multiple network modeling
+                    li.programm__item 2. Centrality measures in social networks and in semantic networks: the limits of applicability
+            article.programm__day
+                time(datetime="2016-07-01").programm__date SOFTWARE WORKSHOPS
+                ul.programm__list
+                    li.programm__item 1. Social Network Analysis with R
+                    li.programm__item 2. Longitudinal ERGM analysis
+                    li.programm__item 3. Multilevel ERGM analysis with MPNet
+                    li.programm__item 4. Semantic Network Analysis with Automap
