@@ -90,7 +90,7 @@
   @include sprite($sprite-up-btn);
   position: fixed;
   right: 50px;
-  bottom: 200px;
+  bottom: 100px;
   opacity: 1;
   @include transition();
   z-index: 50;

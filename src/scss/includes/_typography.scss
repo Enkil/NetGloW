@@ -65,4 +65,21 @@ p{
   color: $color-main-light;
   margin-bottom: 40px;
   margin-top: 0;
+  text-align: left;
+  width: 100%;
+}
+
+ul{
+  font-family:"Ek Mukta", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  color: $color-main-light;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: left;
+  width: 100%;
+  li{
+    text-align: left;
+  }
 }
