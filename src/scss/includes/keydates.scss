@@ -32,6 +32,7 @@
     color: $color-main-dark;
     font-family: "Ek Mukta", sans-serif;
     font-weight: 700;
+    width: 40%;
   }
   &__event{
     font-size: 16px;
@@ -39,6 +40,8 @@
     color: $color-main-light;
     font-family: "Ek Mukta", sans-serif;
     font-weight: 500;
-    margin-right: 27%;
+    //margin-right: 27%;
+    width: 60%;
+    text-align: left;
   }
 }
