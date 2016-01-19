@@ -977,7 +977,7 @@ p {
 .up-btn {
     position : fixed;
     right : 50px;
-    bottom : 200px;
+    bottom : 100px;
     z-index : 50; 
 
     width : 52px;
