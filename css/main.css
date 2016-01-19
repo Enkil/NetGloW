@@ -1266,10 +1266,11 @@ ul li {
 }
 .speaker__seminar {
     margin : 0;
-    margin-bottom : 25px; 
+    margin-bottom : 25px;
 
     font-weight : 700;
     font-size : 16px;
+    text-align : center; 
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
@@ -1486,11 +1487,12 @@ ul li {
     list-style : none;
 }
 .programm__item {
-    margin : 25px 0; 
+    margin : 25px 0;
 
     font-weight : 700;
     font-size : 15px;
     line-height : 15px;
+    text-align : center; 
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
