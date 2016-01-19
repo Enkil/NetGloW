@@ -512,6 +512,10 @@ td, th {
 *  $file-weight: The font-weight CSS property.
 *  $font-callback: The font callback, e.g. sans-serif
 **/
+.text-center {
+    text-align : center;
+}
+
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -591,15 +595,34 @@ The `sprites` mixin generates identical output to the CSS template
 }
 
 p {
-    margin-top : 0; 
+    width : 100%; 
+    margin-top : 0;
     margin-bottom : 40px;
 
     font-weight : 500;
     font-size : 15px;
     line-height : 30px;
+    text-align : left;
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
+}
+
+ul {
+    width : 100%; 
+    margin-top : 0;
+    margin-bottom : 40px;
+
+    font-weight : 500;
+    font-size : 15px;
+    line-height : 30px;
+    text-align : left;
+    color : #069;
+
+    font-family : "Ek Mukta", sans-serif;
+}
+ul li {
+    text-align : left;
 }
 
 .header {
