@@ -28,7 +28,7 @@ window.onload = function(){
 
     // Set up Slick carousel to index top slider
     $('.js-top-slider').slick({
-        lazyLoad: 'progressive',
+        //lazyLoad: 'progressive',
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
