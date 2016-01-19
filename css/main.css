@@ -597,7 +597,7 @@ The `sprites` mixin generates identical output to the CSS template
 p {
     width : 100%; 
     margin-top : 0;
-    margin-bottom : 40px;
+    margin-bottom : 20px;
 
     font-weight : 500;
     font-size : 15px;
@@ -2172,7 +2172,9 @@ label.error {
     display : none;
 }
 .keydates__date {
-    font-weight : 700; 
+    width : 40%; 
+
+    font-weight : 700;
     font-size : 16px;
     line-height : 24px;
     color : #036;
@@ -2180,11 +2182,12 @@ label.error {
     font-family : "Ek Mukta", sans-serif;
 }
 .keydates__event {
-    margin-right : 27%; 
+    width : 60%;
 
     font-weight : 500;
     font-size : 16px;
     line-height : 24px;
+    text-align : left; 
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
@@ -2321,11 +2324,12 @@ label.error {
 
 .registration-text {
     margin-top : 0;
-    margin-bottom : 0; 
+    margin-bottom : 0;
 
     font-weight : 500;
     font-size : 15px;
     line-height : 30px;
+    text-align : center; 
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
@@ -2363,11 +2367,12 @@ label.error {
 }
 
 .practical-info-text {
-    margin-bottom : 40px; 
+    margin-bottom : 40px;
 
     font-weight : 500;
     font-size : 15px;
     line-height : 30px;
+    text-align : center; 
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
