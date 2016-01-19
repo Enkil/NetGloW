@@ -1025,7 +1025,7 @@ ul li {
 .top-slider {
     position : relative;
 
-    width : 100vw;
+    width : 100%;
 
     text-align : center;
 }
