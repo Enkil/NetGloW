@@ -1,6 +1,6 @@
 // Set map
 function initMap(mapIDCurrent) {
-    var myLatlng = new google.maps.LatLng(59.946264, 30.396471); // Marker coordinates
+    var myLatlng = new google.maps.LatLng(59.949700, 30.396418); // Marker coordinates
     var myOptions = { // Map settings
         zoom: 15,
         center: myLatlng,
