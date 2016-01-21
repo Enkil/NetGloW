@@ -108,7 +108,10 @@ window.onload = function(){
         return false;
     });
 
-
+    $(".visible").click(function(){
+        $("p:not(.visible)").css("display","none");
+        $(this).siblings().css("display","block");
+    });
     //upBtn.scrollToTop();
 };
 
@@ -148,6 +151,9 @@ function findMapAndInit(mapID) {
 
 //google.maps.event.addDomListener(window, "load", findMapAndInit(mapID));
 
+$("p.visible").onclick(function(){
+   $(this).siblings.show;
+});
 
 
 var upBtn = (function() {

@@ -1532,6 +1532,85 @@ ul li {
             transform : rotate(180deg);
 }
 
+.programm-table {
+    width : 100%;
+}
+.programm-table:last-child {
+    margin-bottom : 50px;
+}
+.programm-table__head {
+    height : 40px;
+    margin-bottom : 10px; 
+
+    line-height : 40px;
+
+    border-bottom : 1px solid #036;
+}
+.programm-table__head td {
+    font-weight : 700;
+    font-size : 16px;
+    text-align : left; 
+    color : #f90;
+
+    font-family : "Ek Mukta";
+}
+.programm-table__date {
+    width : 30%; 
+
+    font-weight : 700;
+    font-size : 16px;
+    text-align : left;
+    color : #036;
+
+    font-family : "Ek Mukta";
+}
+.programm-table__date span {
+    display : inline-block;
+    margin-right : 20px; 
+
+    font-weight : 700;
+    font-size : 16px;
+    text-align : left;
+    color : #036;
+
+    font-family : "Ek Mukta";
+}
+.programm-table__addr {
+    width : 70%;
+}
+.programm-table__speaker {
+    padding-top : 10px; 
+
+    font-size : 14px;
+    line-height : 18px;
+    vertical-align : top;
+    color : #069;
+}
+.programm-table__name {
+    font-size : 16px;
+    line-height : 19px;
+    color : #036;
+}
+.programm-table__data {
+    padding-top : 10px;
+}
+.programm-table p {
+    display : none; 
+    margin-bottom : 5px;
+
+    font-weight : 300;
+    font-size : 14px;
+    line-height : 16px;
+
+    font-family : "Ek Mukta";
+}
+.programm-table p.visible {
+    display : block;
+    margin-bottom : 30px;
+
+    cursor : pointer;
+}
+
 .submit {
     padding : 65px 0; 
 
