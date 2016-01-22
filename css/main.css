@@ -1555,12 +1555,22 @@ ul li {
     font-family : "Ek Mukta";
 }
 .programm-table__date {
-    width : 30%; 
+    width : 30%;
 
     font-weight : 700;
     font-size : 16px;
     text-align : left;
     color : #036;
+    text-decoration : none; 
+
+    font-family : "Ek Mukta";
+}
+.programm-table__date a {
+    font-weight : 700;
+    font-size : 16px;
+    text-align : left;
+    color : #f90;
+    text-decoration : none; 
 
     font-family : "Ek Mukta";
 }
