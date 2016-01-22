@@ -59,3 +59,89 @@
     transform: rotate(180deg);
   }
 }
+
+.programm-table{
+  width: 100%;
+  &--last{
+    margin-bottom: 95px;
+  }
+  &__head{
+    border-bottom: 1px solid $color-main-dark;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+
+    td{
+      font-family: "Ek Mukta";
+      font-weight: 700;
+      color: $color-orange;
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+  &__date{
+    font-family: "Ek Mukta";
+    font-weight: 700;
+    color: $color-main-dark;
+    font-size: 16px;
+    text-align: left;
+    width: 30%;
+    text-decoration: none;
+    a{
+      font-family: "Ek Mukta";
+      font-weight: 700;
+      color: $color-main-dark;
+      font-size: 16px;
+      text-align: left;
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+    span{
+      font-family: "Ek Mukta";
+      font-weight: 700;
+      color: $color-main-dark;
+      font-size: 16px;
+      text-align: left;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+  &__addr{
+    width: 70%;
+  }
+  &__body{
+
+  }
+  &__speaker{
+    font-size: 14px;
+    line-height: 18px;
+    color:$color-main-light;
+    vertical-align: top;
+    padding-top: 10px;
+  }
+  &__name{
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-main-dark;
+  }
+  &__data{
+    padding-top: 10px;
+  }
+  p{
+    font-family:"Ek Mukta";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    display: none;
+    &.show{
+      display: block;
+    }
+  }
+  p.visible{
+    margin-bottom: 30px;
+    display: block;
+    cursor: pointer;
+  }
+}

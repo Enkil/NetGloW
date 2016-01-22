@@ -108,7 +108,9 @@ window.onload = function(){
         return false;
     });
 
-
+    $(".visible").click(function(){
+        $(this).siblings().toggleClass("show");
+    });
     //upBtn.scrollToTop();
 };
 
