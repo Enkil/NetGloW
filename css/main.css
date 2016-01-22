@@ -1535,6 +1535,9 @@ ul li {
 .programm-table {
     width : 100%;
 }
+.programm-table--last {
+    margin-bottom : 95px;
+}
 .programm-table__head {
     height : 40px;
     margin-bottom : 10px; 
@@ -1600,6 +1603,9 @@ ul li {
     line-height : 16px;
 
     font-family : "Ek Mukta";
+}
+.programm-table p.show {
+    display : block;
 }
 .programm-table p.visible {
     display : block;

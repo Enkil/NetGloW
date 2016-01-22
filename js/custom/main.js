@@ -109,8 +109,7 @@ window.onload = function(){
     });
 
     $(".visible").click(function(){
-        $("p:not(.visible)").css("display","none");
-        $(this).siblings().css("display","block");
+        $(this).siblings().toggleClass("show");
     });
     //upBtn.scrollToTop();
 };
