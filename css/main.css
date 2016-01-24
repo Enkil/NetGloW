@@ -1238,8 +1238,8 @@ ul li {
 }
 .speaker__photo {
     display : inline-block !important; 
-    width : 275px;
-    height : 275px;
+    width : 200px;
+    height : 200px;
     margin-bottom : 20px;
 
     background-color : #fff;
