@@ -21,8 +21,8 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                     label(for='fname').submission__label First name *
                     input(type='text' placeholder='Enter your first name' name='fname' required).submission__input#fname
 
-                    label(for='sname').submission__label Second name
-                    input(type='text' placeholder='Enter your second name' name='sname').submission__input#sname
+                    label(for='sname').submission__label Second name *
+                    input(type='text' placeholder='Enter your second name' name='sname' required).submission__input#sname
 
                     label(for='email').submission__label E-mail *
                     input(type='email' placeholder='Enter your e-mail' name='email' required).submission__input#email
@@ -81,6 +81,7 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                             option(value='Forte Inn Hotel, 52 - 57 EUR per night') Forte Inn Hotel, 52 - 57 EUR per night
                             option(value='Nordic Hotel, 56 EUR per night') Nordic Hotel, 56 EUR per night
                             option(value='All Dreams Hotel, 24 - 34 EUR per night') All Dreams Hotel, 24 - 34 EUR per night
+                            option(value='No preference') No preference
 
                     span.submission__label Would you like to apply for the hostel accommodation provided by the organizers for students who submit the most promising abstracts? *
                         div
@@ -121,6 +122,7 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                             option(value='Networks in Science, Technology, and Innovation') Networks in Science, Technology, and Innovation
                             option(value='Social Movements and Collective Action as Network Phenomena') Social Movements and Collective Action as Network Phenomena
                             option(value='Network Analysis of Political and Policy-making Domains') Network Analysis of Political and Policy-making Domains
+                            option(value='No preference') No preference
 
                     label(for='papertitle').submission__label Paper title *
                     span.submission__subtext.
@@ -130,10 +132,10 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                     label(for='abstract').submission__label Abstract * (200 words)
                     span.submission__subtext.
                         To participate without a presentation please put "WITHOUT A PRESENTATION" in the field below.
-                    textarea(name='abstract' required).submission__textarea#abstract
+                    textarea(name='abstract' required maxlength="1000").submission__textarea#abstract
                     span.submission__subtext.submission__subtext--mini 0/200 words
 
-                    label(for='co-authors').submission__label Co-author(s)
+                    label(for='co-authors').submission__label Co-author(s) *
                     input(type='text' placeholder='' name='co-authors' required).submission__input#co-authors
 
                     span.submission__label Software workshop *
@@ -142,10 +144,11 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                     .submission__select-wrp
                         select.submission__select.required
                                 option
-                                option(value='Social Network Analysis with R') Social Network Analysis with R
+                                option(value='Introduction to R and Social Network Analysis') Introduction to R and Social Network Analysis
                                 option(value='Longitudinal ERGM analysis') Longitudinal ERGM analysis
                                 option(value='Multilevel ERGM analysis with MPNet') Multilevel ERGM analysis with MPNet
                                 option(value='Semantic Network Analysis with Automap') Semantic Network Analysis with Automap
+                                option(value='No preference') No preference
 
                     button.submission__btn Submit
 

@@ -36,6 +36,10 @@
     &--mini{
       font-size: 11px;
       line-height: 11px;
+      //margin-left: 430px;
+      //@include mq($from: mobile, $until: tablet) {
+      //  margin-left: 0;
+      //}
     }
   }
   &__radio-wrp{
@@ -197,7 +201,7 @@ label.error{
   font-family:"Ek Mukta", sans-serif;
   font-weight: 700;
   color: red;
-  margin-left: 30px;
+  margin-left: 100px;
   display: block;
   position: absolute;
 }
