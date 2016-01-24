@@ -2000,6 +2000,11 @@ ul li {
     font-size : 11px;
     line-height : 11px;
 }
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .submission__subtext--mini {
+        margin-left : 0;
+    }
+}
 .submission__radio-wrp {
     position : relative;
     right : 20px; 
