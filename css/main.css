@@ -1622,7 +1622,7 @@ ul li {
 }
 .programm-table p.visible {
     display : block;
-    margin-bottom : 30px;
+    margin-bottom : 15px;
 
     cursor : pointer;
 }
