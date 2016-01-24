@@ -1995,6 +1995,8 @@ ul li {
     font-family : "Ek Mukta", sans-serif;
 }
 .submission__subtext--mini {
+    margin-left : 430px; 
+
     font-size : 11px;
     line-height : 11px;
 }
@@ -2215,7 +2217,7 @@ label.error {
     position : absolute; 
 
     display : block;
-    margin-left : 30px;
+    margin-left : 100px;
 
     font-weight : 700;
     color : red;
