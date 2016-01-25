@@ -132,15 +132,15 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                     label(for='abstract').submission__label Abstract * (200 words)
                     span.submission__subtext.
                         To participate without a presentation please put "WITHOUT A PRESENTATION" in the field below.
-                    textarea(name='abstract' required maxlength="1000").submission__textarea#abstract
+                    textarea(name='abstract' required maxlength="1300").submission__textarea#abstract
                     span.submission__subtext.submission__subtext--mini 0/200 words
 
                     label(for='co-authors').submission__label Co-author(s) *
                     input(type='text' placeholder='' name='co-authors' required).submission__input#co-authors
 
                     span.submission__label Software workshop *
-                    span.submission__subtext.
-                        Information on workshops is available here.
+                    //span.submission__subtext.
+                    //    Information on workshops is available here.
                     .submission__select-wrp
                         select.submission__select.required
                                 option
@@ -148,6 +148,7 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                                 option(value='Longitudinal ERGM analysis') Longitudinal ERGM analysis
                                 option(value='Multilevel ERGM analysis with MPNet') Multilevel ERGM analysis with MPNet
                                 option(value='Semantic Network Analysis with Automap') Semantic Network Analysis with Automap
+                                option(value='Semantic network analysis with R') Semantic network analysis with R
                                 option(value='No preference') No preference
 
                     button.submission__btn Submit
