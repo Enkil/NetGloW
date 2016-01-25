@@ -1626,6 +1626,9 @@ ul li {
 
     cursor : pointer;
 }
+.programm-table p.visible:hover {
+    color : #036;
+}
 
 .submit {
     padding : 65px 0; 
