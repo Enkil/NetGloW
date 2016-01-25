@@ -1633,6 +1633,9 @@ ul li {
 .programm-table .visible:hover {
     color : #036;
 }
+.programm-table .visible p {
+    margin : 0;
+}
 
 .submit {
     padding : 65px 0; 
@@ -1698,6 +1701,9 @@ ul li {
     -ms-flex-pack : center;
 }
 .company-logo__img {
+    width : 100%;
+    height : auto; 
+
     -o-object-fit : contain;
        object-fit : contain;
 }
