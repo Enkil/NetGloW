@@ -1391,7 +1391,7 @@ ul li {
 .speaker-block__name {
     width : 100%;
     margin-top : 0;
-    margin-bottom : 0;
+    margin-bottom : 15px;
 
     font-weight : 500;
     font-size : 16px;
