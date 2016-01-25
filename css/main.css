@@ -1620,13 +1620,13 @@ ul li {
 .programm-table p.show {
     display : block;
 }
-.programm-table p.visible {
+.programm-table .visible {
     display : block;
     margin-bottom : 15px;
 
     cursor : pointer;
 }
-.programm-table p.visible:hover {
+.programm-table .visible:hover {
     color : #036;
 }
 
