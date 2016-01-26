@@ -21,8 +21,8 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                     label(for='fname').submission__label First name *
                     input(type='text' placeholder='Enter your first name' name='fname' required).submission__input#fname
 
-                    label(for='sname').submission__label Second name *
-                    input(type='text' placeholder='Enter your second name' name='sname' required).submission__input#sname
+                    label(for='sname').submission__label Second name
+                    input(type='text' placeholder='Enter your second name' name='sname').submission__input#sname
 
                     label(for='email').submission__label E-mail *
                     input(type='email' placeholder='Enter your e-mail' name='email' required).submission__input#email
@@ -134,10 +134,10 @@ html.no-js(lang='en', prefix='og: http://ogp.me/ns#')
                     span.submission__subtext.
                         To participate without a presentation please put "WITHOUT A PRESENTATION" in the field below.
                     textarea(name='abstract' required maxlength="1300").submission__textarea#abstract
-                    span.submission__subtext.submission__subtext--mini 0/200 words
+                    //span.submission__subtext.submission__subtext--mini 0/200 words
 
-                    label(for='co-authors').submission__label Co-author(s) *
-                    input(type='text' placeholder='' name='co-authors' required).submission__input#co-authors
+                    label(for='co-authors').submission__label Co-author(s)
+                    input(type='text' placeholder='' name='co-authors').submission__input#co-authors
 
                     span.submission__label Software workshop *
                     //span.submission__subtext.
