@@ -34,4 +34,7 @@
   justify-content: space-between;
   &:first-child{  margin-left: 0;}
   &:last-child{  margin-right: 0;}
+  @include mq($from: mobile, $until: tablet) {
+    justify-content: center;
+  }
 }

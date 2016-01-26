@@ -6,6 +6,9 @@
     height: 715px;
     width: 100vw;
     object-fit: cover;
+    @include mq($from: mobile, $until: tablet) {
+      height: auto;
+    }
   }
   &__btn{
     //@include font-family('Ek-Mukta-Bold');
