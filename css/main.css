@@ -1040,6 +1040,11 @@ ul li {
     -o-object-fit : cover;
        object-fit : cover;
 }
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .top-slider__slide {
+        height : auto;
+    }
+}
 .top-slider__btn {
     position : absolute;
     right : 0; 
