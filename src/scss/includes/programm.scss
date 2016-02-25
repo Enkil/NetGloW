@@ -151,3 +151,150 @@
     }
   }
 }
+
+.programm-slider{
+  width: 100%;
+  position: relative;
+
+  &__prev{
+    @include transition(color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: $color-main-dark;
+    font-size: 16px;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+    &:before{
+      content: '';
+      display: inline-block;
+      @include sprite($sprite-arrow-orange);
+      transform: rotate(90deg);
+      margin-right: 15px;
+    }
+    &:hover{
+      color: $color-main-light;
+    }
+  }
+  &__next{
+    @include transition(color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: $color-main-dark;
+    font-size: 16px;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+    &:hover{
+      color: $color-main-light;
+    }
+    &:after{
+      content: '';
+      display: inline-block;
+      @include sprite($sprite-arrow-orange);
+      transform: rotate(-90deg);
+      margin-left: 15px;
+    }
+  }
+
+  &__day{
+    margin: 0 auto;
+    //display: flex;
+    //flex-wrap: wrap;
+    //width: 83.33% !important;
+    padding: 60px 20px;
+    border: 1px solid $color-main-dark;
+    border-radius: 10px;
+    @include box-shadow(0, 0, 7px, rgba(0,0,0,.08));
+    margin-bottom: 70px;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+  &__date{
+    width: 100%;
+    color: $color-orange;
+    font-size: 16px;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  &__left-column{
+    width: 50%;
+    float: left;
+    max-width: 580px;
+  }
+  &__right-column{
+    width: 50%;
+    float: left;
+    max-width: 578px;
+  }
+
+  &__abstract{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__time{
+    color: $color-main-dark;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 20%;
+    text-align: center;
+  }
+  &__content{
+    width: 80%;
+  }
+  &__content-title{
+    color: $color-main-dark;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  &__content-text{
+    color: $color-main-light;
+    font-size: 14px;
+    font-family: 'Ek Mukta', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 16px;
+  }
+}
+
+.full-programm{
+  @include transition();
+  display: block;
+  height: 40px;
+  margin: 45px auto 0;
+  padding: 0 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: transparent;
+  border: 1px solid #f90;
+  border-radius: 18px;
+  transition: all .5s linear;
+  font-family: "Ek Mukta",sans-serif;
+  text-decoration: none;
+  color: $color-main-dark;
+  &:hover{
+    background-color: #f90;
+    color: #fff;
+  }
+}
