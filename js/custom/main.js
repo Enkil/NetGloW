@@ -74,6 +74,18 @@ window.onload = function(){
         nextArrow: '<button type="button" class="slick-next" title="Next Programm date"></button>'
     });
 
+    // Set up Slick carousel to programm slider
+    $('.js-programmpage-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        dots: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="programm-slider__prev" title="Previous Programm date">1.07.2016</button>',
+        nextArrow: '<button type="button" class="programm-slider__next" title="Next Programm date">3.07.2016</button>'
+    });
+
     // Google Map
     findMapAndInit('map');
 
