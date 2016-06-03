@@ -2064,8 +2064,9 @@ ul li {
 @media (min-width: 20em) and (max-width: 46.24em) {
     .speech__icons {
         -webkit-justify-content : flex-start;
-                justify-content : flex-start; 
+                justify-content : flex-start;
         width : 100%;
+        margin-bottom : 20px; 
 
         -webkit-box-pack : start;
         -ms-flex-pack : start;
