@@ -1809,7 +1809,8 @@ ul li {
     font-weight : 700;
     font-size : 16px;
     line-height : 40px;
-    color : #036; 
+    color : #036;
+    text-transform : uppercase; 
     text-decoration : none;
 
     background-color : transparent;
