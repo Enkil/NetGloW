@@ -125,8 +125,8 @@ window.onload = function(){
     });
     //upBtn.scrollToTop();
 
-    $('.speech__theme').click(function(){
-        $(this).siblings('.speech__anounce').toggleClass('speech__anounce--open');
+    $('.speech').click(function(){
+        $(this).find('.speech__anounce').toggleClass('speech__anounce--open');
     });
 };
 

@@ -1979,7 +1979,19 @@ ul li {
 }
 
 .speech {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-wrap : wrap;
+            flex-wrap : wrap;
+    width : 100%;
+    width : 100%;
     margin-top : 20px;
+
+    cursor : pointer; 
+
+        -ms-flex-wrap : wrap;
 }
 .speech__speaker {
     display : block;
@@ -1998,14 +2010,12 @@ ul li {
     display : block;
     width : 100%;
     margin : 0;
-    margin-bottom : 20px;
+    margin-bottom : 20px; 
 
     font-weight : 700;
     font-size : 16px;
     line-height : 16px;
     color : #036;
-
-    cursor : pointer; 
 
     font-family : "Ek Mukta", sans-serif;
 }
@@ -2026,6 +2036,82 @@ ul li {
 }
 .speech__anounce--open {
     display : block;
+}
+.speech__info {
+    width : 50%;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .speech__info {
+        width : 100%;
+    }
+}
+.speech__icons {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-justify-content : flex-end;
+            justify-content : flex-end;
+    -webkit-align-items : center;
+            align-items : center; 
+    width : 50%;
+
+    -webkit-box-align : center;
+    -webkit-box-pack : end;
+    -ms-flex-align : center;
+    -ms-flex-pack : end;
+}
+@media (min-width: 20em) and (max-width: 46.24em) {
+    .speech__icons {
+        -webkit-justify-content : flex-start;
+                justify-content : flex-start; 
+        width : 100%;
+
+        -webkit-box-pack : start;
+        -ms-flex-pack : start;
+    }
+}
+.speech__icon {
+    display : inline-block;
+    margin : 0 7px; 
+
+    background-repeat : no-repeat;
+    cursor : pointer;
+}
+.speech__icon--doc {
+    width : 19px;
+    height : 21px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -69px -77px;
+}
+.speech__icon--doc:hover {
+    width : 19px;
+    height : 21px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -49px -77px;
+}
+.speech__icon--doc:active {
+    width : 19px;
+    height : 21px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 -102px;
+}
+.speech__icon--camera {
+    width : 20px;
+    height : 17px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -40px -102px;
+}
+.speech__icon--camera:hover {
+    width : 20px;
+    height : 17px; 
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -61px -102px;
 }
 
 .submit {
