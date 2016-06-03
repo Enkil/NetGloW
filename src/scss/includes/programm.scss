@@ -436,7 +436,7 @@
     line-height: 16px;
     color: $color-h2-title;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   &__anounce{
     display: none;
@@ -448,10 +448,7 @@
       line-height: 16px;
       color: $color-main-light;
       width: 100%;
-      margin-bottom: 15px;
-      &:last-child{
-        margin-bottom: 5px;
-      }
+      margin-bottom: 5px;
     }
     &--open{
       display: block;
