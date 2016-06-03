@@ -470,6 +470,7 @@
     @include mq($from: mobile, $until: tablet) {
       width: 100%;
       justify-content: flex-start;
+      margin-bottom: 20px;
     }
   }
   &__icon{
