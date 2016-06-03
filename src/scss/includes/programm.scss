@@ -405,10 +405,16 @@
     width: 100%;
     margin-bottom: 5px;
   }
+
 }
 
 .speech{
   margin-top: 20px;
+  width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
 
   &__speaker{
     font-family: 'Ek Mukta', sans-serif;
@@ -431,7 +437,6 @@
     color: $color-h2-title;
     width: 100%;
     margin-bottom: 20px;
-    cursor: pointer;
   }
   &__anounce{
     display: none;
@@ -447,6 +452,46 @@
     }
     &--open{
       display: block;
+    }
+  }
+
+  &__info{
+    width: 50%;
+    @include mq($from: mobile, $until: tablet) {
+      width: 100%;
+    }
+  }
+
+  &__icons{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include mq($from: mobile, $until: tablet) {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+  &__icon{
+    display: inline-block;
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin:0 7px;
+
+    &--doc{
+      @include sprite($sprite-doc-icon-norm);
+      //width: 19px;
+      //height: 21px;
+      &:hover{@include sprite($sprite-doc-icon-hover);}
+      &:active{@include sprite($sprite-doc-icon-click);}
+    }
+    &--camera{
+      @include sprite($sprite-video-icon-norm);
+      //width: 25px;
+      //height: 21px;
+      &:hover{@include sprite($sprite-video-icon-hover);}
+      //&:active{@include sprite($sprite-video-icon-click);}
     }
   }
 }
