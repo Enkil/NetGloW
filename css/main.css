@@ -2010,7 +2010,7 @@ ul li {
     display : block;
     width : 100%;
     margin : 0;
-    margin-bottom : 20px; 
+    margin-bottom : 10px; 
 
     font-weight : 700;
     font-size : 16px;
@@ -2025,7 +2025,7 @@ ul li {
 .speech__anounce p {
     width : 100%;
     margin : 0;
-    margin-bottom : 15px; 
+    margin-bottom : 5px; 
 
     font-weight : 300;
     font-size : 14px;
@@ -2033,9 +2033,6 @@ ul li {
     color : #069;
 
     font-family : "Ek Mukta", sans-serif;
-}
-.speech__anounce p:last-child {
-    margin-bottom : 5px;
 }
 .speech__anounce--open {
     display : block;
