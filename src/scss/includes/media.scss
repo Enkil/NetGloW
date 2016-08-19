@@ -1,0 +1,90 @@
+.video{
+    width: 100%;
+    margin-top: 40px; 
+    margin-bottom: 70px;   
+}
+.photo{
+    width: 100%;
+    margin-top: 40px; 
+    margin-bottom: 70px;  
+    .slide-link{
+        font-weight: 700;
+    } 
+}
+.gallery-main{
+    width: 100%;
+    max-width: 670px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    .slick-arrow{
+        @include sprite($sprite-programm-arrow);
+        position: absolute;
+        top: 45%;
+        z-index: 10;
+        display: inline-block;
+        width: 30px;
+        height: 57px;
+        padding: 0;
+        background-color: transparent;
+        color: transparent;
+        border: none;
+        outline: 0;
+        cursor: pointer;
+    }
+    .slick-prev{
+        left: 10px;
+        transform: translateY(-50%);
+    }
+    .slick-next{
+        right: 10px;
+        transform: translateY(-50%) rotate(180deg);
+    }    
+}
+.gallery-thumbs{
+    margin: 20px auto;
+}
+.slide-link{
+    color: $color-main-dark;
+    font-family: 'Ek Mukta', sans-serif;
+    text-decoration: none;
+    &:hover, &:focus{
+        text-decoration: underline;
+    }
+}
+.slide-img{
+    width: 100%;
+    // height: 440px;
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+.slide-play{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    width: 118px;
+    height: 118px;
+}
+.slide-thumb{
+    height: auto;
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
