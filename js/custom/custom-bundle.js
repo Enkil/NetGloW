@@ -74,73 +74,26 @@ window.onload = function(){
         nextArrow: '<button type="button" class="slick-next" title="Next Programm date"></button>'
     });
 
-	if($('.js-programmpage-slider').length){
-		var days=[];
-
-		$('.programm-slider__date').each(function(){
-			days.push($(this).html());
-		});
-
-		if(days.length){
-			Array.prototype.next = function() {
-				return this[++this.current];
-			};
-			Array.prototype.prev = function() {
-				return this[--this.current];
-			};
-			Array.prototype.setCurrent = function(current) {
-				this.current=current;
-			};
-			Array.prototype.current = 0;
-
-			// Set up Slick carousel to programm slider
-			var slider_program=$('.js-programmpage-slider').slick({
-				infinite: false,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				variableWidth: true,
-				dots: false,
-				arrows: true,
-				prevArrow: '<button type="button" class="programm-slider__prev days_prev hidden" title="Previous Programm date"></button>',
-				//prevArrow: '',
-				nextArrow: '<button type="button" class="programm-slider__next days_next" title="Next Programm date">'+days.next()+'</button>'
-			});
-
-			slider_program.on('afterChange', function(slick, currentSlide){
-				days.setCurrent(slider_program.slick('slickCurrentSlide'));
-
-				var prev=days.prev();
-				days.setCurrent(slider_program.slick('slickCurrentSlide'));
-				var next=days.next();
-
-				if(prev){
-					$('.days_prev').removeClass('hidden').html(prev);
-				}else{
-					$('.days_prev').addClass('hidden').html('');
-				}
-
-				if(next){
-					$('.days_next').removeClass('hidden').html(next);
-				}else{
-					$('.days_next').addClass('hidden').html('');
-				}
-			});
-		}
-	}
+    // Set up Slick carousel to programm slider
+    $('.js-programmpage-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        dots: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="programm-slider__prev" title="Previous Programm date">1.07.2016</button>',
+        nextArrow: '<button type="button" class="programm-slider__next" title="Next Programm date">3.07.2016</button>'
+    });
 
     // Google Map
     findMapAndInit('map');
 
-    form = $("form.submission");
-	form.validate({
-		errorPlacement: function(error, element) {
-			if (element.attr("type") == "radio") {
-			  error.insertAfter(element.next());
-			} else {
-			  error.insertAfter(element);
-			}
-		}
-	});
+    form = $("form");
+
+    form.each( function() {
+        $(this).validate({});
+    } );
 
     form.submit (function(event) {
         if (form.valid())
@@ -172,7 +125,7 @@ window.onload = function(){
     });
     //upBtn.scrollToTop();
 
-	$('.speech').click(function(){
+    $('.speech').click(function(){
         $(this).find('.speech__anounce').toggleClass('speech__anounce--open');
     });
 };
@@ -212,10 +165,10 @@ function findMapAndInit(mapID) {
 }
 
 //google.maps.event.addDomListener(window, "load", findMapAndInit(mapID));
-/*
-$("p.visible").onclick(function(){
-   $(this).siblings.show;
-});*/
+
+$("p.visible").click(function(){
+   $(this).siblings().show();
+});
 
 
 var upBtn = (function() {
@@ -249,3 +202,40 @@ var upBtn = (function() {
 
 })();
 
+
+ // Video
+$('.gallery-video-main').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.gallery-video-thumbs'
+});
+$('.gallery-video-thumbs').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.gallery-video-main',
+  centerPadding: '0',
+  arrows: false,
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+ // Photo
+$('.gallery-photo-main').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.gallery-photo-thumbs'
+});
+$('.gallery-photo-thumbs').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.gallery-photo-main',
+  centerPadding: '0',
+  arrows: false,
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});

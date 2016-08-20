@@ -1,3 +1,3 @@
-$("p.visible").onclick(function(){
-   $(this).siblings.show;
+$("p.visible").click(function(){
+   $(this).siblings().show();
 });
